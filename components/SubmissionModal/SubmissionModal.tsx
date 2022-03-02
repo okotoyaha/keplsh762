@@ -104,7 +104,7 @@ const FormContent = ({ onSubmit, beforeForm }: any) => {
 
             <FFTextField
               name='subject'
-              placeholder='Pvz. įmonės, produkto pavadinimas ar asmens vardas'
+              placeholder='Pvz. įmonės, produkto pavadinimas'
               label='Subjektas'
             />
 
@@ -125,15 +125,15 @@ const FormContent = ({ onSubmit, beforeForm }: any) => {
             <FFTextField
               name='connection'
               placeholder='Tiksli citata iš šaltinio'
-              label='Sąsaja'
+              label='Citata'
               multiline
               rows={4}
             />
 
             <FFTextField
               name='source'
-              placeholder='Prašome pateikti tik tiesioginį šaltinį, kuris patritina sąsają, o ne bendrą nuorodą į kompanijos puslapį ar pan. Pvz. https://wikipedia.lt/apie-subjektą'
-              label='Šaltinis patvirtinantis sąsają'
+              placeholder='Prašome pateikti tik tiesioginį šaltinį, kuriame randama citata, o ne bendrą nuorodą į kompanijos puslapį ar pan. Pvz. https://wikipedia.lt/apie-subjektą'
+              label='Šaltinis'
             />
 
             <Button type='submit' color='success' variant='contained'>

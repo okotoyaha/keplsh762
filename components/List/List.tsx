@@ -36,7 +36,7 @@ export const List = ({ data = [], searchWords = [] }: Props) => {
             </TableCell>
             <TableCell component='th' className={styles.tableHead}>
               <Grid container direction='row' alignItems='center'>
-                Sąsaja
+                Citata
                 <Tooltip title='Šaltinis' placement='top'>
                   <Info />
                 </Tooltip>

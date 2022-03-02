@@ -37,12 +37,6 @@ const QUAGGA_CONFIG = {
   locate: true,
 }
 
-enum OriginCountry {
-  RUSSIA = 'russia',
-  BELARUS = 'belarus',
-  OTHER = 'other',
-}
-
 function getOriginCountry(eanCode: string) {
   eanCode = eanCode.trim()
   if (eanCode.length < 3) {
@@ -159,11 +153,7 @@ export default function QrScanner() {
     }
 
     setDetectionStatus({
-      severity:
-        originCountry.includes('Baltarusija') ||
-        originCountry.includes('Rusija')
-          ? 'error'
-          : 'success',
+      severity: 'info',
       message: `Kilmės šalis: ${originCountry} (barkodas prasideda ${prefix})`,
     })
     return

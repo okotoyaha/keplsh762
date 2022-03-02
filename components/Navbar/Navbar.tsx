@@ -126,7 +126,6 @@ export const Navbar = ({
             className={styles.title}
           >
             {title}
-            {/* Is It Connected To russia? */}
           </Typography>
 
           <div className={styles.search}>

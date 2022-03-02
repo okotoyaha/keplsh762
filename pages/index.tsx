@@ -76,10 +76,9 @@ const Home: NextPage = () => {
           helpText={
             <>
               Rinkdamiesi prekes ar paslaugas atitinkamai įvertinkite
-              informaciją pateiktą šiame puslapyje
-              <br />
-              <br />
-              Слава Україні! Героям слава! 🇺🇦
+              informaciją pateiktą šiame puslapyje. Mes neskatiname nepalaikyti
+              šių prekių ar paslaugų, tiesiog teikiame viešai prieinamą
+              informaciją.
             </>
           }
           extraIcons={
