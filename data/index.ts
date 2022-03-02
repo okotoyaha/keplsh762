@@ -22,19 +22,14 @@ export const data: DataType[] = [
     ],
   },
   {
-    logo: 'data:image/svg+xml;base64,PHN2ZyBpZD0iaW5saW5lLXN2Zy0xLTEiIGRhdGEtbmFtZT0iTGF5ZXIgMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNzAgNzAiPjx0aXRsZT5sb2dvLWRvZG8tZnVsbC1lbmdsaXNoLWZpeGVkPC90aXRsZT48cGF0aCBkPSJNMjguNTYsM2MxOC41NCwwLDMyLjgsMTIuNzksMzIuOCwzMS43NVM0Ny4xLDY3LDI4LjU0LDY3SDcuN2E3LjM2LDcuMzYsMCwwLDEtNy42OS03cTAtLjMyLDAtMC42M1YxMUE3LjU4LDcuNTgsMCwwLDEsNy4xOSwzSDI4LjU2WiIgc3R5bGU9ImZpbGw6I2ZmNjkwMCI+PC9wYXRoPjxwYXRoIGQ9Ik00OS45LDI3Ljg5Yy0wLjEuNzktMSwuNzktMS40NCwwLjEtMS4zLTIuMTktMy0yLjYtNS42OS0yLjgtMi0uMS00LjMzLjEtNi41OCwwLjFoLTAuMWwtMC4xNi0uMDlhMC40NSwwLjQ1LDAsMCwxLS4xNi0wLjNjMC40LTEuODksMi01LjM3LDMuNjktNS42OSwwLjc5LS4xLDIuNi0wLjMsMy41OS0wLjNDNDcuNjMsMTguOSw1MC4xLDI0LjIsNDkuOSwyNy44OVpNMjMuOTIsNDZBMzEuOTEsMzEuOTEsMCwwLDAsMzQuMyw0N2EyNy42MSwyNy42MSwwLDAsMCwxMi44Ny00LjJDNDUuNzMsNDYuNjEsNDAsNDksMzQuNiw0OS41N2MwLDAuMy0uMS40OS0wLjEsMC43OWEyMS41MiwyMS41MiwwLDAsMCw5Ljc3LTIuOGMtMSwzLjY5LTYsNS4yLTEwLjU4LDUuNWE1LjksNS45LDAsMCwxLS40Ljc5QTIyLjkyLDIyLjkyLDAsMCwwLDQwLDUzYy0yLjExLDMuOS0xMS4wOCw2LjYtMTguNjYsM2EyNCwyNCwwLDAsMCwyLjYtMTBoMFpNNDksMTkuNDFBOC43Niw4Ljc2LDAsMCwwLDQyLjcxLDE3Yy0zLDAtNS40OC43OS05LjE4LDAuODktMi41LjEtNC43OS01LjM3LTcuNzgtNi4wOUEzLjg4LDMuODgsMCwwLDAsMTkuNjgsMTBjLTEuNjktMS00LjMzLS40OS00LjMzLDEuNDQtMS44OS0uNTktNC4zMy40LTMuMjksMy00LjY5LjEtNS40OCw0LjMzLTIuNCw0LjY5LTQuMTcsMi4yNS0yLjI3LDYuMjUsMS4xMyw1LjUxLDAuNjEsNiwzLjI5LDEzLjc4LTEuMSwxNS42OWExMS43NSwxMS43NSwwLDAsMS02LjI5LS4yTDAsMzkuMTl2My4wOWEzMC44LDMwLjgsMCwwLDAsOC42NiwxLjE1YzUuNzctLjU5LDYuMDktNS4zNyw1Ljc3LTkuNThTMTIuNzUsMjUsMTMuMjQsMjEuNTdsLTAuMi0uMmMtMi4wOSwyLjE5LTMuNDksMS42LTMuNjkuODktMC4yMy0xLjM2LDIuMjEtMy4xNSwzLjY1LTMuNzUsMC0uMS4xLTAuMiwwLjEtMC4zLTEuMy4yLTIuODksMC0zLS44OXMyLjE5LTIuMTksNS4yLTEuODljMC4xLDAsLjEtMC4xLjItMC4xTDE0LjkyLDE1YTEsMSwwLDAsMS0uNjYtMS40NEEyLjE0LDIuMTQsMCwwLDEsMTYsMTIuOTFhNi42OCw2LjY4LDAsMCwxLDIuNzMuNTNjMC4xLDAsLjEtMC4xLjItMC4xYTMuNTYsMy41NiwwLDAsMS0uNTktMC41OSwwLjc2LDAuNzYsMCwwLDEsMC0xLDIuMDgsMi4wOCwwLDAsMSwyLjQuNGwwLjQ5LDAuNDloMC4xNmwwLjE0LS4wOWExLjA4LDEuMDgsMCwwLDEtLjMtMC42NiwwLjU5LDAuNTksMCwwLDEsLjI5LTAuNzlsMC4xLDBhMS4yMSwxLjIxLDAsMCwxLDEuMi40OSw0Ljg4LDQuODgsMCwwLDEsLjU5LDEuMjQsOC4yOCw4LjI4LDAsMCwwLTYuMTIsMy4xMiw5LjU0LDkuNTQsMCwwLDAtMS4yLDguMiw1OC41NSw1OC41NSwwLDAsMCwyLjg5LDl2MC4xYzIuNDIsNi44OCw3LDIzLjg2LTE1LjIxLDMyLjg2QTkuMTQsOS4xNCwwLDAsMCw3LjUsNjdIOS43OWEyOC44NiwyOC44NiwwLDAsMCw5Ljg3LTguMThDMjkuODQsNjMuMjYsMzkuMDksNjEsNDMuMSw1My41OGE5Ljc3LDkuNzcsMCwwLDAsNC41My03LjI2LDcuNDksNy40OSwwLDAsMCwxLjQ0LTYuNDdjLTAuMS0uNC0wLjQ5LTAuNC0xLjEtMC4xLTguMjgsNS0xNS41Niw1Ljc3LTI0LjI0LDMuMmE2NS43MSw2NS43MSwwLDAsMC0xLjItOC4xYy0wLjItMy40OS44OS01LjIsNy4yMi0zLjFhMTkuNzksMTkuNzksMCwwLDEsNy41OCw0YzAuNjYsMC40OSwxLjU5LDEuMSwyLjA5LjY2YTEuOTIsMS45MiwwLDAsMCwuNC0xLjQ0QTE2LjcxLDE2LjcxLDAsMCwwLDM4LDI4LjcxYTUyLjEsNTIuMSwwLDAsMSw1LjY5LDAsMy4yMiwzLjIyLDAsMCwxLDIuODksMi4xOWMwLjY2LDIsNC41OSwxLjQ0LDQuODktLjIsMC41OS0zLjQ5Ljc5LTguMS0yLjYtMTEuMjlINDlabS00NC4zLDMwYTM2LjcxLDM2LjcxLDAsMCwwLTQuNjksMHYyLjA5YzIuNjgtLjU5LDQuMzMtMC44OSw0LjMzLTAuODlaIj48L3BhdGg+PHBhdGggZD0iTTI5LjY1LDI3LjU2Yy0zLjQ5LS43OS03LjM2LTEuOC05LjM4LTQuNzksMC0uMS0wLjEtMC4xLTAuMi0wLjFoMGEwLjg5LDAuODksMCwwLDAsLjEuNDlsLTAuMy4xYTIsMiwwLDAsMS0uMS0yLjQsMi41NywyLjU3LDAsMCwxLDMuMjktLjNsLTAuMS4zYTIuMTksMi4xOSwwLDAsMC0xLjQ0LjEsMC41MywwLjUzLDAsMCwwLS4yLjc5QzIzLDI1LDI4LDI1LjY2LDMzLjg4LDI1LjE2YTAuNzEsMC43MSwwLDAsMCwuNzYtMC40OSwxMS4zMywxMS4zMywwLDAsMSwyLjc5LTUuMywxNS42MSwxNS42MSwwLDAsMS0yLjg5LjJjLTMsLjItNC43OS0wLjItNS4zLTAuNTlsMC4xLS4zYTAuNzEsMC43MSwwLDAsMCwuNjYsMCwwLjM4LDAuMzgsMCwwLDAtLjEtMC4zYy0wLjU2LS41My0zLjE2LTMuMjItMy4xNi0zLjIyLTAuMy0yLjM3LTMuNjUtMi4zNy00Ljg5LS4xN2wtMC40LS4xYTMuMzYsMy4zNiwwLDAsMSwuNDktMS4yLDYuMjgsNi4yOCwwLDAsMC00LjYyLDUuMzdDMTYuMTMsMjkuMjUsMzEuNTksMjYuODUsMzYsMzFjMC4xLDAuMS4zLDAuNCwwLjQsMC4ycy0xLjc5LTIuNi02Ljc4LTMuNjloMFptLTUuMzctMTIuM2EyLjQxLDIuNDEsMCwwLDEsMi4yOSwxLjZjMC41MSwxLjEuNCwyLjE5LS4zLDIuNUEyLjI0LDIuMjQsMCwwLDEsMjQsMTcuNzhjLTAuMS0uMi0wLjEtMC4zLTAuMi0wLjQ5aDAuMWEwLjY2LDAuNjYsMCwwLDAsLjY5LjE3LDAuNzUsMC43NSwwLDAsMCwwLTEsMC45MiwwLjkyLDAsMCwwLS43OS0wLjU5bC0wLjEtLjFhMS4zNCwxLjM0LDAsMCwxLC41OS0wLjQ5IiBzdHlsZT0iZmlsbDojZmZmIj48L3BhdGg+PHBhdGggZD0iTTQ3LjIsNDIuNzlBMjcuNjEsMjcuNjEsMCwwLDEsMzQuMzMsNDcsMzUuMjQsMzUuMjQsMCwwLDEsMjQsNDZhMTUuMjgsMTUuMjgsMCwwLDEtLjMsMyw0MS40Niw0MS40NiwwLDAsMCw4Ljg4LDEuMSwxNC45MSwxNC45MSwwLDAsMS00LjMzLDcuNTlDMzMuNTUsNTcuODgsMzguNDcsNTUuNzksNDAsNTNhMjAuMzYsMjAuMzYsMCwwLDEtNi43Ljg5YzAuMS0uMy4zLTAuNDksMC40LTAuNzksNC41OS0uMiw5LjU4LTEuNywxMC41OC01LjVhMjEuNTIsMjEuNTIsMCwwLDEtOS43NywyLjhjMC0uMy4xLTAuNDksMC4xLTAuNzksNS4zNS0uNjYsMTEuMDctMywxMi41Ny02LjgiIHN0eWxlPSJmaWxsOiNmZmYiPjwvcGF0aD48L3N2Zz4K',
-    subject: 'Dodo Pizza',
-    about: 'Restoranai',
+    logo: 'data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iYy1sb2dvLS1kZXNrdG9wIiB3aWR0aD0iMTM1IiBoZWlnaHQ9IjM2IiB2aWV3Qm94PSIwIDAgMTM1IDM2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00LjgxNjQxIDI1LjU4MnYxLjk2MTdjMCAxLjk0MzIgMS4zODkwOCAzLjA1OCAzLjA2NTc3IDMuMDU4SDkuMDM4NzJWMjUuNTgySDQuODE2NDF6IiBmaWxsPSIjZmY5ZjZiIj48L3BhdGg+PHBhdGggZD0iTTI5LjI2NjQgMTcuNzUwNmMwLTIuMDE0LS4zOTc3LTMuODU1Ni0xLjEyMjktNS40NzIzQzI3LjE2MTQgMTEuNjE2MiAyNi4wNjkxIDExLjA4OTYgMjQuODk0MiAxMC43MTM5IDI0Ljk4NiAxMS4zNjM3IDI1LjAzNDkgMTIuMDM4MSAyNS4wMzQ5IDEyLjczMWMwIDcuNjQ2NS01LjY4NDggMTIuODU0LTEzLjA4NjEgMTIuODU0SDkuMDM5MDZ2NS4wMTk3SDE2LjE4MzNDMjMuNTgxNiAzMC42MDE2IDI5LjI2NjQgMjUuMzk0MSAyOS4yNjY0IDE3Ljc1MDZ6IiBmaWxsPSIjZmY3ZDExIj48L3BhdGg+PHBhdGggZD0iTTcuODgyMzYgNS4wMTk2N0gxNi4xODMyYzIuOTI4MS4wIDUuNTg2OS44MDM3NjAwMDAwMDAwMDEgNy43MzE3IDIuMjQxOTFDMjEuOTA3OCAyLjc3MTYgMTcuMzkxOC4wIDExLjk1MTcuMEgzLjY0NzhDMS45NzExMS4wLjU4MjAzMSAxLjI0MTA2LjU4MjAzMSAzLjE4MTE3VjIyLjUyMzhjMCAxLjk0MzIgMS4zODkwNzkgMy4wNTggMy4wNjU3NjkgMy4wNThINC44MTM1M1Y4LjIwMDg0QzQuODE2NTkgNi4yNjA3MiA2LjIwNTY3IDUuMDE5NjcgNy44ODIzNiA1LjAxOTY3eiIgZmlsbD0iI2ZkODg2ZCI+PC9wYXRoPjxwYXRoIGQ9Ik05LjAzODcyIDEzLjIxMjljMC0xLjk0MzIgMS4zODkwOC0zLjE4MTEgMy4wNjU3OC0zLjE4MTFoOC4zMDM5YzEuNTg3OS4wIDMuMDk2NC4yMzcxIDQuNDg4NS42ODM2QzI0LjcyMjUgOS40ODA1MiAyNC4zODkgOC4zMjU2OSAyMy45MTQ3IDcuMjY2MzMgMjEuNzY5OSA1LjgyNTEgMTkuMTExMSA1LjAyNDQxIDE2LjE4MyA1LjAyNDQxSDcuODgyMThjLTEuNjc2NjkuMC0zLjA2NTc3IDEuMjQxMDYtMy4wNjU3NyAzLjE4MTE4VjI1LjU4NjZIOS4wNDE3OFYxMy4yMTI5SDkuMDM4NzJ6IiBmaWxsPSIjZmU2ZTQyIj48L3BhdGg+PHBhdGggZD0iTTEyLjEwNDggMTAuMDI5NGMtMS42NzY3LjAtMy4wNjU3NCAxLjI0MTEtMy4wNjU3NCAzLjE4MTJWMjUuNTgxMkgxMS45NDg4YzcuNDAxMy4wIDEzLjA4NjEtNS4yMDc1IDEzLjA4NjEtMTIuODU0MUMyNS4wMzQ5IDEyLjAzNDIgMjQuOTg2IDExLjM1OTggMjQuODk0MiAxMC43MWMtMS4zOTIyLS40NDY1LTIuOTAwNi0uNjgzNi00LjQ4ODUtLjY4MzZIMTIuMTA0OFYxMC4wMjk0eiIgZmlsbD0iI2Y5NTYxMSI+PC9wYXRoPjxwYXRoIGQ9Ik0yOC4xNDY2IDEyLjI3NzNDMjguODcxNyAxMy44OTQxIDI5LjI2OTUgMTUuNzM1NyAyOS4yNjk1IDE3Ljc0OTdjMCA3LjY0NjUtNS42ODQ5IDEyLjg1NC0xMy4wODYyIDEyLjg1NEg5LjAzOTA2djEuMzM2NmMwIDEuOTQzMiAxLjM4OTA0IDMuMDU4IDMuMDY1NzQgMy4wNThoOC4zMDM5YzcuNDAxMy4wIDEzLjA4NjItNS4xMzk4IDEzLjA4NjItMTIuNTQ2MS4wLTQuNTk0Ny0yLjA3NDUtNy45NzYxLTUuMzQ4My0xMC4xNzQ5eiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzYzNjI4XzIyMDQpIj48L3BhdGg+PHBhdGggZD0iTTI4LjE0OTUgMTIuMjc4M0MyNy4yMjI0IDEwLjIwNTggMjUuNzU5OSA4LjQ5OTcgMjMuOTE4IDcuMjYxNzIgMjQuMzkyMiA4LjMyMTA4IDI0LjcyNTcgOS40NzU5MSAyNC45MDAxIDEwLjcxMDggMjYuMDc1IDExLjA4OTYgMjcuMTY3MyAxMS42MTYyIDI4LjE0OTUgMTIuMjc4M3oiIGZpbGw9IiNmZjlmNmIiPjwvcGF0aD48cGF0aCBkPSJNODIuMzI2OCAxMS40MzE4SDgwLjA0NzFWMy43NTMwOUg4Mi4zMjY4Qzg0Ljg0MiAzLjc1MzA5IDg2LjMwNCA1LjA4MDc4IDg2LjMwNCA3LjUzMjMxcy0xLjQ2MiAzLjg5OTQ5LTMuOTc3MiAzLjg5OTQ5ek03Ni4zOTA4LjIwOTA4NlYxNC45NzU4SDgyLjg1MjFDODcuMzU0NiAxNC45NzU4IDkwLjM5NTEgMTEuOTMzNiA5MC4zOTUxIDcuNTMyMzEgOTAuMzk1MSAyLjkyNDU4IDg3LjI5NTEuMjA5MDg2IDgyLjg1MjEuMjA5MDg2SDc2LjM5MDh6TTk5Ljg3MSAxMS42NjdDOTcuNTYwMiAxMS42NjcgOTYuMDQxMyA5Ljk1NTA5IDk2LjA0MTMgNy42MjExNyA5Ni4wNDEzIDUuMjU4NSA5Ny41MDMzIDMuNTQ2NjEgOTkuODE0IDMuNTQ2NjEgMTAyLjE4MiAzLjU0NjYxIDEwMy42NDQgNS4yNTg1IDEwMy42NDQgNy42MjExNyAxMDMuNjQ0IDkuOTU1MDkgMTAyLjI5OCAxMS42NjcgOTkuODcxIDExLjY2N3pNOTkuODExNC4wQzk1LjI4MDUuMCA5MS45NDUgMy4zMzc1MyA5MS45NDUgNy42MTg1NiA5MS45NDUgMTEuOTU5NyA5NS4yMjEgMTUuMjA4NCA5OS44MTE0IDE1LjIwODQgMTA0LjU0OSAxNS4yMDg0IDEwNy43MzUgMTEuODcwOCAxMDcuNzM1IDcuNTU4NDQgMTA3LjczNyAzLjI4MDAzIDEwNC4zNDUuMCA5OS44MTE0LjB6TTQ4LjkzMzQgMTEuNDMxOEg0Ni42NTM3VjMuNzUzMDloMi4yNzk3YzIuNTE1Mi4wIDMuOTc3MiAxLjMyNzY5IDMuOTc3MiAzLjc3OTIycy0xLjQ2MiAzLjg5OTQ5LTMuOTc3MiAzLjg5OTQ5ek00MyAuMjA5MDg2VjE0Ljk3NThoNi40NjEzYzQuNTAyNS4wIDcuNTQzLTMuMDQyMiA3LjU0My03LjQ0MzQ5LjAtNC42MDc3My0zLjEtNy4zMjMyMjQtNy41NDMtNy4zMjMyMjRINDN6TTY2LjUzNzEgMTEuNjY3Yy0yLjMxMDguMC0zLjgyOTctMS43MTE5MS0zLjgyOTctNC4wNDU4My4wLTIuMzYyNjcgMS40NjItNC4wNzQ1NiAzLjc3MjgtNC4wNzQ1NkM2OC44NDc5IDMuNTQ2NjEgNzAuMjgxNCA1LjI1ODUgNzAuMjgxNCA3LjYyMTE3IDcwLjI3ODggOS45NTUwOSA2OC45NjQzIDExLjY2NyA2Ni41MzcxIDExLjY2N3pNNjYuNDc3Ni4wYy00LjUzMS4wLTcuODY2NCAzLjMzNzUzLTcuODY2NCA3LjYxODU2QzU4LjYxMTIgMTEuOTU5NyA2MS43OTkxIDE1LjIwODQgNjYuNDc3NiAxNS4yMDg0YzQuNzA2OS4wIDcuODk0OC0zLjMzNzYgNy44OTQ4LTcuNjQ5OTZDNzQuMzcyNCAzLjI4MDAzIDcxLjAxMTEuMCA2Ni40Nzc2LjB6IiBmaWxsPSIjMDAwIj48L3BhdGg+PHBhdGggZD0iTTExMi45NyAzMS40NjA1SDExMC4zOTdWMjMuNzgxOEgxMTIuOTdDMTE1LjI0OSAyMy43ODE4IDExNi43OTkgMjUuMTA5NSAxMTYuNzk5IDI3LjU2MTEgMTE2Ljc5OSAzMC4wMTI2IDExNS4yNDkgMzEuNDYwNSAxMTIuOTcgMzEuNDYwNXptLTYuMjI5LTExLjIyMjdWMzUuMDA0NWg2LjQ2MUMxMTcuNzA1IDM1LjAwNDUgMTIwLjc0NSAzMS45NjIzIDEyMC43NDUgMjcuNTYxMSAxMjAuNzQ1IDIyLjk1MzMgMTE3LjY0NSAyMC4yMzc4IDExMy4yMDIgMjAuMjM3OGgtNi40NjF6TTUwLjc3NTggMzEuOTAyMkg0Ni41MDYyVjI5LjA5NzhoNC4xNTMyYzEuMTQxMS4wIDEuNjk0OS40NzMxMDAwMDAwMDAwMDIgMS42OTQ5IDEuNDQ4QzUyLjM1NDMgMzEuMzQwMyA1MS44NTc1IDMxLjkwMjIgNTAuNzc1OCAzMS45MDIyem0yNy42OTAzLTIuODM1NyAxLjg5OTMtNC45MzE4TDgyLjI5NTggMjkuMDY2NUg3OC40NjYxek02NS4xOTE1IDI3LjM4MzNINjIuMDAzNlYyMy40ODY1SDY0Ljk1NjFDNjYuNTA2IDIzLjQ4NjUgNjcuMjY2OCAyNC4xNjYgNjcuMjY2OCAyNS40MDQ5YzAgMS4yMzg4LS44MTc3MDAwMDAwMDAwMDIgMS45Nzg0LTIuMDc1MyAxLjk3ODR6TTUwLjI3OSAyMy4zMzc1QzUxLjM2MDYgMjMuMzM3NSA1MS44ODU5IDIzLjk1NjkgNTEuODg1OSAyNC44MTQyIDUxLjg4NTkgMjUuNjcxNCA1MS4zNjA2IDI2LjI5MDkgNTAuMjE5NSAyNi4yOTA5SDQ2LjUwNjJWMjMuMzM3NUg1MC4yNzl6bTM0LjQ0NCAxMS42NjdoMy43MTMyTDgyLjM1NTMgMjAuMjM3OEg3OC41MjU2bC02LjExMiAxNC43NjY3aDMuNzEzM0w3Ny4xOCAzMi4zMTc4SDgzLjY0MTNsMS4wODE3IDIuNjg2N3ptMTUuMzUyLTE0Ljc2Njd2OS40NTA3bC02LjA1MjEtOS40NTA3SDkwLjA0NTdWMzUuMDA0NWgzLjUwODlWMjUuNTgyNkw5OS42MDcgMzUuMDA0NWgzLjk3N1YyMC4yMzc4aC0zLjUwOXpNNzEuMDY4MSAyNS4zMTZjMC0zLjIxOTktMi4yNTEzLTUuMDgwOC01LjM1MTMtNS4wODA4SDU4LjQ5NDdWMzUuMDAxOWgzLjUwODlWMzAuNDg1NmgyLjMxMDdMNjcuNDcxMiAzNS4wMDQ1aDQuMDkzN2wtMy41Njg0LTUuMDQ5NEM2OS45Mjk1IDI4Ljk3NzYgNzEuMDY4MSAyNy4yNjU3IDcxLjA2ODEgMjUuMzE2ek01NC4wNTE4IDI3LjQ3MjJDNTUuMDQ1NCAyNi43OTI3IDU1LjQ4NTMgMjUuNjQwMSA1NS40ODUzIDI0LjM3MjVjMC0yLjU5NzktMS45NTg4LTQuMTM0Ny00Ljg4MjgtNC4xMzQ3SDQzVjM1LjAwNDVoNy44MDY5YzMuMzkyNC4wIDUuMjAzNy0xLjg4OTYgNS4yMDM3LTQuMzQxMS4wLTEuNDc5My0uNjQ0Mjk5OTk5OTk5OTk0LTIuNjAwNS0xLjk1ODgtMy4xOTEyek0xMjYuMjczIDI0LjQzYzAtLjc2ODQuNjEzLTEuMTgxMyAyLjI3OS0xLjE4MTNDMTMwLjg2MyAyMy4yNDg3IDEzMi43MzQgMjMuNzc5MiAxMzMuOTA0IDI0LjA3NDZWMjAuNzk3MUMxMzMuMDU1IDIwLjU2MTkgMTMxLjAzOSAyMCAxMjguODE2IDIwYy0zLjEyOC4wLTYuMzQ1IDEuMDYzNy02LjM0NSA0LjgxNDIuMCAzLjYwNDEgMy4wNDEgNC4xMzQ3IDUuNzg4OTk5OTk5OTk5OTkgNC40M0MxMzAuMjQ3IDI5LjQ1MDcgMTMwLjc3NSAyOS45NTI1IDEzMC43NzUgMzAuNjYwOCAxMzAuNzc1IDMxLjM5NzggMTMwLjI1IDMxLjk4ODQgMTI4LjIzMSAzMS45ODg0IDEyNS44OTIgMzEuOTg4NCAxMjMuNzg2IDMxLjMwODkgMTIyLjY0NyAzMC44OTZ2My4zNDAxQzEyMy41MjQgMzQuNTYwMiAxMjUuNjg4IDM1LjIzOTcgMTI4LjE0MyAzNS4yMzk3IDEzMi42MTcgMzUuMjM5NyAxMzQuNTc2IDMzLjE0MzYgMTM0LjU3NiAzMC4yMTkxIDEzNC41NzYgMjcuMjM3IDEzMi41MDEgMjYuMjMzNCAxMjkuODEgMjUuODc3OSAxMjcuNTAyIDI1LjU4MjYgMTI2LjI3MyAyNS4zNzYxIDEyNi4yNzMgMjQuNDN6IiBmaWxsPSIjMDAwIj48L3BhdGg+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzYzNjI4XzIyMDQiIHgxPSI5LjAzOTk1IiB5MT0iMjMuNjM2MyIgeDI9IjMzLjQ5MzkiIHkyPSIyMy42MzYzIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmYjczOCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZiYWQxOCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjwvc3ZnPgo=',
+    subject: 'Dodo Brands',
+    about: 'Frančizė',
     sources: [
       {
-        connection: 'Dodo Pizza franchisee in Klaipeda and Vilnius, Lithuania.',
+        connection: 'INFORMATION ABOUT THE BRAND',
         source:
           'https://topfranchise.com/products/pizza-delivery-franchise-dodo-pizza/',
-      },
-      {
-        connection: 'Pardavimai Lietuvoje',
-        source:
-          'https://dodobrands.io/sales-ranking/?country=440&page=0&period=week',
       },
       {
         connection:
@@ -57,7 +52,7 @@ export const data: DataType[] = [
     subject: 'Baltic Petroleum',
     about: 'Degalinės',
     connection:
-      '"„Baltic Petroleum“ valdo pernai įkurta bendrovė „Baltic Petroleum NT“, kurios akcininkas – buvusio „Lukoil Lietuvos“ vadovo, „Viada LT“ kontroliuojančios įmonės akcininko Ivano Paleičiko sūnus Andriejus Paleičikas."',
+      '"„Baltic Petroleum“ valdo pernai įkurta bendrovė „Baltic Petroleum NT“, kurios akcininkas – buvusio „Lukoil Lietuvos“ vadovo, „Viada LT“ kontroliuojančios įmonės akcininko sūnus"',
     source:
       'https://www.delfi.lt/verslas/verslas/baltic-petroleum-dividendu-siemet-nemokes.d?id=87476445',
   },
@@ -367,30 +362,22 @@ export const data: DataType[] = [
     connection:
       '"The determining factor for production was the high quality of Belarusian artesian water"',
   },
-  {
-    subject: 'Splat',
-    logo: 'https://en.splatglobal.com/img/logo.svg',
-    about: 'Kosmetika',
-    source: 'https://en.wikipedia.org/wiki/Splat-Cosmetica',
-    connection:
-      '"Splat-Cosmetica (stylized as SPLAT-COSMETICA, often abbreviate SPLAT) is a Russian manufacturer of oral care products..."',
-  },
-  {
-    subject: 'Stolichnaya',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Stolichnaya_etiketka.JPG/240px-Stolichnaya_etiketka.JPG',
-    about: 'Gėrimai',
-    source: 'https://en.wikipedia.org/wiki/Stolichnaya',
-    connection:
-      '"...the ownership of Stolichnaya has been disputed between the Russian state-owned company FKP Soyuzplodoimport and SPI Group, a private company founded and owned by Yuri Shefler, a Russian-born billionaire..."',
-  },
-  {
-    subject: 'Russian Standard',
-    logo: 'https://seeklogo.com/images/R/russian-standard-vodka-logo-06C32F65EC-seeklogo.com.png',
-    about: 'Gėrimai',
-    source: 'https://en.wikipedia.org/wiki/Russian_Standard_(vodka)',
-    connection:
-      '"The brand was introduced as the "Russian Standard" vodka in 1998 by the Russian Standard company of Roustam Tariko"',
-  },
+  // {
+  //   subject: 'Splat',
+  //   logo: 'https://en.splatglobal.com/img/logo.svg',
+  //   about: 'Kosmetika',
+  //   source: 'https://en.wikipedia.org/wiki/Splat-Cosmetica',
+  //   connection:
+  //     '"Splat-Cosmetica (stylized as SPLAT-COSMETICA, often abbreviate SPLAT) is a Russian manufacturer of oral care products..."',
+  // },
+  // {
+  //   subject: 'Russian Standard',
+  //   logo: 'https://seeklogo.com/images/R/russian-standard-vodka-logo-06C32F65EC-seeklogo.com.png',
+  //   about: 'Gėrimai',
+  //   source: 'https://en.wikipedia.org/wiki/Russian_Standard_(vodka)',
+  //   connection:
+  //     '"The brand was introduced as the "Russian Standard" vodka in 1998 by the Russian Standard company of Roustam Tariko"',
+  // },
   {
     subject: 'Zelionaja Marka',
     logo: 'https://www.vynomeka.lt/images/uploader/de/degtine-zelionaja-marka-07-l-1.jpg',
@@ -399,20 +386,20 @@ export const data: DataType[] = [
       'https://www.diffordsguide.com/beer-wine-spirits/1922/green-mark-zelyonaya-marka-vodka',
     connection: '"Product of: Russia"',
   },
-  {
-    subject: 'Vostok Europe',
-    logo: 'https://upload.wikimedia.org/wikipedia/lt/thumb/8/8b/Vostok-Europe_logo.jpg/300px-Vostok-Europe_logo.jpg',
-    connection:
-      'Vostok Europe yra bendra įmonė, vienijanti Rusijos Vostok ir Lietuvos UAB Koliz.',
-    about: 'Laikrodžiai',
-    source: 'https://lt.wikipedia.org/wiki/Vostok_Europe',
-  },
-  {
-    subject: 'Moskovskaya vodka',
-    connection:
-      '"...is an early Russian brand of vodka introduced in 1894 by the Russian state vodka monopoly"',
-    logo: 'https://seeklogo.com/images/M/moskovskaya-logo-BF71F6A1B5-seeklogo.com.png',
-    about: 'Gėrimai (Alkoholiniai)',
-    source: 'https://en.wikipedia.org/wiki/Moskovskaya_vodka',
-  },
+  // {
+  //   subject: 'Vostok Europe',
+  //   logo: 'https://upload.wikimedia.org/wikipedia/lt/thumb/8/8b/Vostok-Europe_logo.jpg/300px-Vostok-Europe_logo.jpg',
+  //   connection:
+  //     'Vostok Europe yra bendra įmonė, vienijanti Rusijos Vostok ir Lietuvos UAB Koliz.',
+  //   about: 'Laikrodžiai',
+  //   source: 'https://lt.wikipedia.org/wiki/Vostok_Europe',
+  // },
+  // {
+  //   subject: 'Moskovskaya vodka',
+  //   connection:
+  //     '"...is an early Russian brand of vodka introduced in 1894 by the Russian state vodka monopoly"',
+  //   logo: 'https://seeklogo.com/images/M/moskovskaya-logo-BF71F6A1B5-seeklogo.com.png',
+  //   about: 'Gėrimai (Alkoholiniai)',
+  //   source: 'https://en.wikipedia.org/wiki/Moskovskaya_vodka',
+  // },
 ]
