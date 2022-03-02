@@ -362,22 +362,22 @@ export const data: DataType[] = [
     connection:
       '"The determining factor for production was the high quality of Belarusian artesian water"',
   },
-  // {
-  //   subject: 'Splat',
-  //   logo: 'https://en.splatglobal.com/img/logo.svg',
-  //   about: 'Kosmetika',
-  //   source: 'https://en.wikipedia.org/wiki/Splat-Cosmetica',
-  //   connection:
-  //     '"Splat-Cosmetica (stylized as SPLAT-COSMETICA, often abbreviate SPLAT) is a Russian manufacturer of oral care products..."',
-  // },
-  // {
-  //   subject: 'Russian Standard',
-  //   logo: 'https://seeklogo.com/images/R/russian-standard-vodka-logo-06C32F65EC-seeklogo.com.png',
-  //   about: 'Gėrimai',
-  //   source: 'https://en.wikipedia.org/wiki/Russian_Standard_(vodka)',
-  //   connection:
-  //     '"The brand was introduced as the "Russian Standard" vodka in 1998 by the Russian Standard company of Roustam Tariko"',
-  // },
+  {
+    subject: 'Splat',
+    logo: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTYxLjkgMTUyLjkiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE2MS45IDE1Mi45IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNCQTBDMkYiIHdpZHRoPSIxNjEuOSIgaGVpZ2h0PSIxNTIuOSIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTM2LjQsNjUuNHYtNS4zYzAtMi41LTAuNy0zLjEtMi4xLTMuMWMtMS40LDAtMi4xLDAuNi0yLjEsMy4xdjYuMWMwLDMuNiwxMSwxMy40LDExLDE4LjR2OC44DQoJYzAsNi41LTQuNyw4LjQtOC45LDguNGMtNC4yLDAtOC45LTEuOS04LjktOC40di0yLjdsNi44LTR2Ni4xYzAsMi41LDAuNywzLjEsMi4xLDMuMWMxLjMsMCwyLjEtMC42LDIuMS0zLjF2LTUuMmMwLTctMTEtMTIuOS0xMS0yMQ0KCXYtNy4xYzAtNi41LDQuNy04LjQsOC45LTguNGM0LjIsMCw4LjksMS45LDguOSw4LjR2MS44TDM2LjQsNjUuNHoiLz4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik04Miw5NS4xaDUuNWwxLjksNi43SDc1LjJWNTEuMUg4MlY5NS4xeiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEzNi41LDUxLjF2Ni43SDEzMHY0NGgtNi44di00NGgtNmwtMC43LTYuN0gxMzYuNXoiLz4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xMDkuNiw1MS4xSDk5LjRsLTUuMiw1MC43aDYuMmwxLjUtMTMuNWg0LjhsMS4zLDEzLjVoNi45TDEwOS42LDUxLjF6IE0xMDIuNSw4MS42bDEuNS0xOC42aDAuOGwxLjIsMTguNg0KCUgxMDIuNXoiLz4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik01Ny40LDUxLjFoLTcuMXY1MC43aDYuOFY1Ny4yYzIuOCwwLDQuMiwwLjEsNC4yLDQuOXYxMi4xYzAsMS42LTEuNCwyLjEtMywyLjNsMS42LDYNCgljNS40LTAuNiw4LjItMy4xLDguMi0xMC4zVjYxQzY4LDU0LjIsNjQuOSw1MS4xLDU3LjQsNTEuMXoiLz4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xMzguNCw0NXYtNC43aDIuMWMwLjQsMCwwLjcsMCwxLDAuMWwwLjUsMC40YzAuMSwwLjIsMC4yLDAuNCwwLjIsMC43YzAsMC4zLTAuMSwwLjYtMC4zLDAuOA0KCQljLTAuMiwwLjItMC41LDAuNC0xLDAuNGwwLjQsMC4yYzAuMiwwLjIsMC4zLDAuNCwwLjUsMC42bDAuOCwxLjNoLTAuOGwtMC42LTFjLTAuMi0wLjMtMC4zLTAuNS0wLjQtMC42bC0wLjMtMC4zbC0wLjMtMC4xbC0wLjMsMA0KCQlIMTM5VjQ1SDEzOC40eiBNMTM5LDQyLjRoMS4zYzAuMywwLDAuNSwwLDAuNy0wLjFsMC40LTAuM2wwLjEtMC40bC0wLjMtMC41Yy0wLjEtMC4xLTAuNC0wLjItMC44LTAuMkgxMzlWNDIuNHoiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTM1LjgsNDIuOGMwLDIuNCwyLDQuNCw0LjUsNC40YzIuNCwwLDQuNC0yLDQuNC00LjRjMC0yLjQtMi00LjQtNC40LTQuNA0KCQlDMTM3LjgsMzguNCwxMzUuOCw0MC40LDEzNS44LDQyLjh6IE0xMzYuMyw0Mi44YzAtMi4yLDEuOC0zLjksMy45LTMuOWMyLjEsMCwzLjksMS43LDMuOSwzLjljMCwyLjEtMS43LDMuOS0zLjksMy45DQoJCUMxMzguMSw0Ni43LDEzNi4zLDQ1LDEzNi4zLDQyLjh6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==',
+    about: 'Kosmetika',
+    source:
+      'https://web.archive.org/web/20170129102848/http://manufacturing-journal.net/company-profiles-home/58-cosmetics/3528-products-which-have-no-analogues-in-the-world',
+    connection:
+      '"A year later SPLAT became number 1 Russian brand in the Russian market of oral hygiene (according to AC Nielsen)"',
+  },
+  {
+    subject: 'Russian Standard',
+    logo: 'https://seeklogo.com/images/R/russian-standard-vodka-logo-06C32F65EC-seeklogo.com.png',
+    about: 'Gėrimai',
+    source: 'https://vodka.com/the-family',
+    connection: '"RUSSIA\'S NUMBER ONE PREMIUM VODKA"',
+  },
   {
     subject: 'Zelionaja Marka',
     logo: 'https://www.vynomeka.lt/images/uploader/de/degtine-zelionaja-marka-07-l-1.jpg',
@@ -394,12 +394,11 @@ export const data: DataType[] = [
   //   about: 'Laikrodžiai',
   //   source: 'https://lt.wikipedia.org/wiki/Vostok_Europe',
   // },
-  // {
-  //   subject: 'Moskovskaya vodka',
-  //   connection:
-  //     '"...is an early Russian brand of vodka introduced in 1894 by the Russian state vodka monopoly"',
-  //   logo: 'https://seeklogo.com/images/M/moskovskaya-logo-BF71F6A1B5-seeklogo.com.png',
-  //   about: 'Gėrimai (Alkoholiniai)',
-  //   source: 'https://en.wikipedia.org/wiki/Moskovskaya_vodka',
-  // },
+  {
+    subject: 'Moskovskaya vodka',
+    connection: '"The world needs to experience quality Russian vodka!"',
+    logo: 'https://seeklogo.com/images/M/moskovskaya-logo-BF71F6A1B5-seeklogo.com.png',
+    about: 'Gėrimai (Alkoholiniai)',
+    source: 'https://moskovskaya.vodka/history/',
+  },
 ]
