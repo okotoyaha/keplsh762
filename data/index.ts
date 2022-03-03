@@ -51,6 +51,12 @@ export const data: DataType[] = [
     sources: [
       {
         connection:
+          '"...UAB „Žiežmarių gėlės“, kurią per UAB „Etelipsus“ valdo p. Stonys."',
+        source:
+          'https://www.vz.lt/sektoriai/agroverslas/2016/03/16/stonio-siltnamiai-ziezmariuose--nelegalus',
+      },
+      {
+        connection:
           '"...Žiežmariuose verslininkui, buvusiam „Dujotekanos" prezidentui Rimandui Stoniui priklausantys gėlių šiltnamiai..."',
         source:
           'https://www.vz.lt/sektoriai/agroverslas/2016/03/16/stonio-siltnamiai-ziezmariuose--nelegalus',
