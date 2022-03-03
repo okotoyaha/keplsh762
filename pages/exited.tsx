@@ -11,7 +11,7 @@ import { List } from '../components/List/List'
 import { SubmissionModal } from '../components/SubmissionModal/SubmissionModal'
 
 import { DataType } from '../types/data'
-import { data, getId } from '../data/ukrainian'
+import { data, getId } from '../data/exits'
 import Link from 'next/link'
 import { Alert, IconButton, Tooltip } from '@mui/material'
 import Home from '@mui/icons-material/Home'
@@ -30,7 +30,7 @@ miniSearch.addAll(data)
 
 const theme = createTheme()
 
-const BuyUkr: NextPage = () => {
+const Exited: NextPage = () => {
   const [isSubmissionOpen, setIsSubmissionOpen] = useState(false)
   const [results, setResults] = useState<DataType[]>([])
   const [terms, setTerms] = useState<string[]>([])
@@ -55,19 +55,18 @@ const BuyUkr: NextPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Rinkis Ukrainietišką</title>
+        <title>Sąsajų atsisakiusios kompanijos</title>
       </Head>
 
       <div>
         <Navbar
           onSearch={executeSearch}
           onSubmission={onSubmission}
-          title='Rinkis Ukrainietišką'
+          title='Sąsajų atsisakiusios kompanijos'
           helpText={
             <>
-              Pateikiame patikrintą sąrašą pilnai arba dalinai Ukrainietiško
-              kapitalo verslo subjektų; verslų, kurių produkciją pirkdami galite
-              bent truputį prisidėti prie nepriklausomos Ukrainos ateities
+              Pateikiame sąrašą kompanijų, kurios viešai išreiškė ketinimus
+              atsisakyti sąsajų arba ėmėsi veiksmų tiesiogiai paremti Ukrainą
               <br />
               <br />
               Слава Україні! Героям слава! 🇺🇦
@@ -90,11 +89,12 @@ const BuyUkr: NextPage = () => {
           <SubmissionModal
             beforeForm={
               <Alert severity='info'>
-                Pridėkite Ukrainos kompaniją ar subjektą
+                Pridėkite ryšių atsisakiusį arba tiesiogiai Ukrainą remiantį
+                subjektą
               </Alert>
             }
             onClose={onModalClose}
-            subject='Buy UKR'
+            subject='Exited'
             endpoint='https://formpost.app/buyukr@protonmail.com'
           />
         )}
@@ -103,4 +103,4 @@ const BuyUkr: NextPage = () => {
   )
 }
 
-export default BuyUkr
+export default Exited

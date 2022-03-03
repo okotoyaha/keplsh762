@@ -18,6 +18,7 @@ interface Props {
   onClose: () => void
   endpoint: string
   beforeForm?: ReactNode
+  subject?: string
 }
 
 const validHttpUrl = (value: string) => {
@@ -146,7 +147,12 @@ const FormContent = ({ onSubmit, beforeForm }: any) => {
   )
 }
 
-export const SubmissionModal = ({ onClose, endpoint, beforeForm }: Props) => {
+export const SubmissionModal = ({
+  onClose,
+  endpoint,
+  beforeForm,
+  subject,
+}: Props) => {
   const [message, setMessage] = useState('')
 
   const onSubmit = (values: any) => {
@@ -158,6 +164,9 @@ export const SubmissionModal = ({ onClose, endpoint, beforeForm }: Props) => {
 
     const formData = new FormData()
     Object.entries(values).forEach(([key, value]) => {
+      if (subject) {
+        formData.append('fp_subject', subject)
+      }
       formData.append(key, String(value))
     })
 
