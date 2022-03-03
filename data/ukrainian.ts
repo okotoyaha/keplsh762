@@ -151,4 +151,18 @@ export const data: DataType[] = [
     connection:
       'Ukrainietiška vaikiška kosmetika: plaukų priemonės, muilas, vonios putos, dantų pasta, lūpų balzamai.',
   },
+  {
+    logo: 'http://pepsico.ua/upload/iblock/ae0/ae0b7a25d61f8b7d4ea00f912c0ffe67.png',
+    subject: 'Sadochok',
+    about: 'Sultys',
+    source: 'http://pepsico.ua/brands/id885.html',
+    connection: 'Sultys iš Ukrainos ("соків в Україні.")',
+  },
+  {
+    logo: 'http://pepsico.ua/upload/iblock/ae0/ae0b7a25d61f8b7d4ea00f912c0ffe67.png',
+    subject: 'VORTEX',
+    about: 'Indų plovikliai, šiukšlių maišai, kempinelės indams, šveitikliai',
+    source: 'https://parfums.ua/brand/vortex',
+    connection: 'Prekės ženklas VORTEX Kilmės šalis: Ukraina',
+  },
 ]
