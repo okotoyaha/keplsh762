@@ -5,10 +5,10 @@ export const getId = () => i++
 
 export const data: DataType[] = [
   {
-    logo: '',
-    subject: 'Duomenys renkami',
-    about: '',
-    source: '',
-    connection: '',
+    subject: 'CyberX arena',
+    logo: 'https://cyberxarena.lt/wp-content/uploads/2020/10/Logo_did.png',
+    about: 'Laisvalaikio erdvė',
+    connection: 'Paskelbė nuotraukiantys frančizės sutarty su CyberX',
+    source: 'https://www.facebook.com/cyberxarena/posts/458205912756083',
   },
 ]

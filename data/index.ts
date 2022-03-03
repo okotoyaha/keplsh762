@@ -285,13 +285,6 @@ export const data: DataType[] = [
     source: 'https://en.wikipedia.org/wiki/Masha_and_the_Bear',
   },
   {
-    subject: 'CyberX arena',
-    logo: 'https://cyberxarena.lt/wp-content/uploads/2020/10/Logo_did.png',
-    about: 'Laisvalaikio erdvė',
-    connection: 'Frančizė iš Rusijos',
-    source: 'https://cyberx-franchise.ru/',
-  },
-  {
     subject: 'R.O.C.S',
     about: 'Burnos priežiūros priemonės',
     connection:
