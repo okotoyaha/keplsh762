@@ -66,7 +66,7 @@ const Exited: NextPage = () => {
           helpText={
             <>
               Pateikiame sąrašą kompanijų, kurios viešai išreiškė ketinimus
-              atsisakyti sąsajų arba ėmėsi veiksmų tiesiogiai paremti Ukrainą
+              atsisakyti sąsajų ir/arba ėmėsi veiksmų tiesiogiai paremti Ukrainą
               <br />
               <br />
               Слава Україні! Героям слава! 🇺🇦
@@ -82,6 +82,11 @@ const Exited: NextPage = () => {
             </Link>
           }
         />
+
+        <Alert severity='info'>
+          Šios įmonės viešai išreiškė ketinimus atsisakyti sąsajų ir/arba ėmėsi
+          veiksmų tiesiogiai paremti Ukrainą
+        </Alert>
 
         <List data={results.length ? results : data} searchWords={terms} />
 
