@@ -472,4 +472,36 @@ export const data: DataType[] = [
     connection:
       '"Girteka Logistics turi savo padalinius <...> ir Rusijoje (Smolenske)."',
   },
+  {
+    subject: 'UAB LIT Salt Trade',
+    logo: 'https://www.cvmarket.lt/firm_logos/2021/45/97714-3b91f290125e826af7bee9087eccbf63.JPG',
+    about: '„Belaruskalij“ druskos ir trašos importas',
+    sources: [
+      {
+        source:
+          'https://www.delfi.lt/news/daily/lithuania/baltarusijos-rezimo-imonei-milijoniniai-pirkimai-is-lietuvos-biudzeto.d?id=88184407',
+        connection:
+          '"Baltarusijos režimo įmonei – milijoniniai pirkimai iš Lietuvos biudžeto"',
+      },
+      {
+        connection:
+          '"Lietuvai nutraukus „Belaruskalij“ trąšų gabenimą, jos gali būti toliau vežamos per kitus tarpininkus ir konkrečiai mūsų šalyje registruotą įmonę „LIT Salt Trade"',
+        source:
+          'https://www.delfi.lt/verslas/verslas/izvelgia-schema-belarus…auti-ir-per-lietuvoje-registruotus-tarpininkus.d?id=88916363',
+      },
+    ],
+  },
+
+  {
+    subject: 'Morendi',
+    about: 'Automobilių chipavimas',
+    logo: 'https://topfranchise.com/upload/resize_cache/webp/iblock/c7c/c7c774780c662c0fcec7d5e47510add0.webp',
+    sources: [
+      {
+        connection:
+          'Lithuania (Литва, Вильнюс) <...> Dealer name: MORENDI LITHUANIA',
+        source: 'https://www.morendi.ru/pages/company-partners',
+      },
+    ],
+  },
 ]
