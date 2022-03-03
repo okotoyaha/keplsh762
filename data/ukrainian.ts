@@ -143,4 +143,12 @@ export const data: DataType[] = [
     source: 'https://www.karakara.lt/kilmes-salis/ukraina/page/2/',
     connection: 'Kilmės šalis Ukraina',
   },
+  {
+    logo: 'https://organic-store.name/images/products/pink-elephant/4823015943065-2.jpg',
+    subject: 'Pink Elephant',
+    about: 'Vaikiška kosmetika',
+    source: 'https://organic-store.name/pink-elephant.html',
+    connection:
+      'Ukrainietiška vaikiška kosmetika: plaukų priemonės, muilas, vonios putos, dantų pasta, lūpų balzamai.',
+  },
 ]
