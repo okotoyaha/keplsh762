@@ -418,29 +418,29 @@ export const data: DataType[] = [
       'https://www.diffordsguide.com/beer-wine-spirits/1922/green-mark-zelyonaya-marka-vodka',
     connection: '"Product of: Russia"',
   },
-  {
-    subject: 'Vostok Europe',
-    logo: 'https://upload.wikimedia.org/wikipedia/lt/thumb/8/8b/Vostok-Europe_logo.jpg/300px-Vostok-Europe_logo.jpg',
-    about: 'Laikrodžiai',
-    sources: [
-      {
-        connection: '"Website: http://www.vostok-europe.com "',
-        source: 'https://rekvizitai.vz.lt/en/company/koliz_vostok/',
-      },
-      {
-        connection:
-          '"Rankinių laikrodžių eksploatacija ir gamyba: CP UAB ,,KoLiz-Vostok“"',
-        source:
-          'https://web.archive.org/web/20200805125518/http://www.koliz.lt/lt/about.htm',
-      },
-      {
-        connection:
-          '" - Pramoninės siuvimo įrangos tiekimas: <...> COOO ,,KoLiz“, Minskas, Baltarusija."',
-        source:
-          'https://web.archive.org/web/20200805125518/http://www.koliz.lt/lt/about.htm',
-      },
-    ],
-  },
+  // {
+  //   subject: 'Vostok Europe',
+  //   logo: 'https://upload.wikimedia.org/wikipedia/lt/thumb/8/8b/Vostok-Europe_logo.jpg/300px-Vostok-Europe_logo.jpg',
+  //   about: 'Laikrodžiai',
+  //   sources: [
+  //     {
+  //       connection: '"Website: http://www.vostok-europe.com "',
+  //       source: 'https://rekvizitai.vz.lt/en/company/koliz_vostok/',
+  //     },
+  //     {
+  //       connection:
+  //         '"Rankinių laikrodžių eksploatacija ir gamyba: CP UAB ,,KoLiz-Vostok“"',
+  //       source:
+  //         'https://web.archive.org/web/20200805125518/http://www.koliz.lt/lt/about.htm',
+  //     },
+  //     {
+  //       connection:
+  //         '" - Pramoninės siuvimo įrangos tiekimas: <...> COOO ,,KoLiz“, Minskas, Baltarusija."',
+  //       source:
+  //         'https://web.archive.org/web/20200805125518/http://www.koliz.lt/lt/about.htm',
+  //     },
+  //   ],
+  // },
   {
     subject: 'Moskovskaya vodka',
     connection: '"The world needs to experience quality Russian vodka!"',
