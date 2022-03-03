@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import MiniSearch from 'minisearch'
@@ -14,6 +14,7 @@ import { data, getId } from '../data'
 import Link from 'next/link'
 import { Alert, IconButton, Tooltip } from '@mui/material'
 import ShoppingCart from '@mui/icons-material/ShoppingCart'
+import LinkOff from '@mui/icons-material/LinkOff'
 import styles from './index.module.css'
 
 let miniSearch = new MiniSearch({
@@ -83,14 +84,23 @@ const Home: NextPage = () => {
             </>
           }
           extraIcons={
-            <Link href='/buy-ukr' passHref>
-              <Tooltip title='Rinkis Ukrainietišką' placement='bottom-end'>
-                <IconButton component='a' className={styles.iconButton}>
-                  <ShoppingCart className={styles.icon} />
-                  <div className={styles.badge}>🇺🇦</div>
-                </IconButton>
-              </Tooltip>
-            </Link>
+            <>
+              <Link href='/buy-ukr' passHref>
+                <Tooltip title='Rinkis Ukrainietišką' placement='bottom-end'>
+                  <IconButton component='a' className={styles.iconButton}>
+                    <ShoppingCart className={styles.icon} />
+                    <div className={styles.badge}>🇺🇦</div>
+                  </IconButton>
+                </Tooltip>
+              </Link>
+              <Link href='/exited' passHref>
+                <Tooltip title='Nutraukę sąsajas' placement='bottom-end'>
+                  <IconButton component='a' className={styles.iconButton}>
+                    <LinkOff className={styles.icon} />
+                  </IconButton>
+                </Tooltip>
+              </Link>
+            </>
           }
         />
 
@@ -101,6 +111,16 @@ const Home: NextPage = () => {
           <Link href='mailto:stoprus@protonmail.com' passHref>
             <a className={styles.alertLink}>stoprus@protonmail.com</a>
           </Link>
+        </Alert>
+
+        <Alert severity='success'>
+          Taip pat pradėjome rinkti
+          <Link href='/exited' passHref>
+            <a className={styles.alertLink}>sąrašą subjektų</a>
+          </Link>
+          , kurie pareiškė ketinimus nutraukti sąsajas ir/arba konkrečiais
+          veiksmais parėmė Ukrainą. Šiuo metu labai reikia patikimų duomenų!
+          Dėkui!
         </Alert>
 
         <List data={results.length ? results : data} searchWords={terms} />

@@ -13,7 +13,7 @@ import { SubmissionModal } from '../components/SubmissionModal/SubmissionModal'
 import { DataType } from '../types/data'
 import { data, getId } from '../data/exits'
 import Link from 'next/link'
-import { Alert, IconButton, Tooltip } from '@mui/material'
+import { Alert, Button, IconButton, Tooltip } from '@mui/material'
 import Home from '@mui/icons-material/Home'
 
 let miniSearch = new MiniSearch({
@@ -86,6 +86,14 @@ const Exited: NextPage = () => {
         <Alert severity='info'>
           Šios įmonės viešai išreiškė ketinimus atsisakyti sąsajų ir/arba ėmėsi
           veiksmų tiesiogiai paremti Ukrainą
+        </Alert>
+
+        <Alert severity='warning'>
+          Duomenys renkami! Būtume labai dėkingi, jei padėtumėte pranešti apie
+          įmones, nutraukusias sąsajas arba tiesiogiai parėmusias Ukrainą.
+          <Button variant='text' size='small' onClick={onSubmission}>
+            Pranešti
+          </Button>
         </Alert>
 
         <List data={results.length ? results : data} searchWords={terms} />

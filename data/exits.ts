@@ -6,9 +6,9 @@ export const getId = () => i++
 export const data: DataType[] = [
   {
     logo: '',
-    subject: 'TODO',
-    about: 'TODO',
+    subject: 'Duomenys renkami',
+    about: '',
     source: '',
-    connection: 'TODO',
+    connection: '',
   },
 ]
