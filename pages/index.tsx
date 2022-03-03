@@ -76,7 +76,10 @@ const Home: NextPage = () => {
           helpText={
             <>
               Rinkdamiesi prekes ar paslaugas atitinkamai įvertinkite
-              informaciją pateiktą šiame puslapyje
+              informaciją pateiktą šiame puslapyje.
+              <br />
+              Pateikiame išskirtinai tik kituose šaltiniuose nurodytą
+              informaciją, už kurios tikrumą atsako tos informacijos skleidėjai.
             </>
           }
           extraIcons={
