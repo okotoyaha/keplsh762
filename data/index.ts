@@ -504,4 +504,13 @@ export const data: DataType[] = [
       },
     ],
   },
+
+  {
+    subject: 'Burger King',
+    logo: 'https://logos-world.net/wp-content/uploads/2020/05/Burger-King-Logo.png',
+    about: 'Greito maisto restoranas',
+    connection:
+      '"Burger King fast food chain has no plans to leave Russia and still considers our country as one of the strategic markets"',
+    source: 'https://www.akm.ru/eng/news/burger-king-will-remain-in-russia/',
+  },
 ]
