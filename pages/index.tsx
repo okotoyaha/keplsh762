@@ -76,9 +76,6 @@ const Home: NextPage = () => {
           title=''
           helpText={
             <>
-              Rinkdamiesi prekes ar paslaugas atitinkamai įvertinkite
-              informaciją pateiktą šiame puslapyje.
-              <br />
               Pateikiame išskirtinai tik kituose šaltiniuose nurodytą
               informaciją, už kurios tikrumą atsako tos informacijos skleidėjai.
             </>
