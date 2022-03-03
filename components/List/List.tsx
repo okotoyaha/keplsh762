@@ -72,17 +72,14 @@ export const List = ({ data = [], searchWords = [] }: Props) => {
                         component='div'
                       >
                         <ListItemAvatar className={styles.sourcesAvatar}>
-                          <Tooltip title={source} placement='right'>
+                          <Tooltip title={source || ''} placement='right'>
                             <a
                               href={source}
                               target='_blank'
                               rel='noopener noreferrer'
                             >
                               <IconButton edge='end' aria-label='delete'>
-                                <Info
-                                  // className={styles.infoIcon}
-                                  sx={{ fontSize: 16 }}
-                                />
+                                <Info sx={{ fontSize: 16 }} />
                               </IconButton>
                             </a>
                           </Tooltip>
