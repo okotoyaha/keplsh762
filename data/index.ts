@@ -435,7 +435,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '" - Pramoninės siuvimo įrangos tiekimas: CP OOO ,,Siuvimo įrangos centras“, Maskva, Rusija (http://www.sewingcenter.ru); COOO ,,KoLiz“, Minskas, Baltarusija."',
+          '" - Pramoninės siuvimo įrangos tiekimas: <...> COOO ,,KoLiz“, Minskas, Baltarusija."',
         source:
           'https://web.archive.org/web/20200805125518/http://www.koliz.lt/lt/about.htm',
       },
