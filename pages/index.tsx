@@ -76,9 +76,7 @@ const Home: NextPage = () => {
           helpText={
             <>
               Rinkdamiesi prekes ar paslaugas atitinkamai įvertinkite
-              informaciją pateiktą šiame puslapyje. Mes neskatiname nepalaikyti
-              šių prekių ar paslaugų, tiesiog teikiame viešai prieinamą
-              informaciją.
+              informaciją pateiktą šiame puslapyje
             </>
           }
           extraIcons={
@@ -93,19 +91,10 @@ const Home: NextPage = () => {
           }
         />
 
-        <Alert severity='warning'>
-          Galimai pastebėjote, kad kai kurie prekių ženklai buvo pašalinti.
-          Dalis jų buvo pašalinti dėl perspėjimų apie teisinius procesus.
-          Ieškome pro-bono teisinių konsultacijų, galintys prisidėti kreipkitės
-          el. paštu
-          <Link href='mailto:stoprus@protonmail.com' passHref>
-            <a className={styles.alertLink}>stoprus@protonmail.com</a>
-          </Link>
-        </Alert>
-
         <Alert severity='info'>
-          Šis puslapis yra savanoriškas projektas, todėl dėl didelio pranešimų
-          kiekio gali įsivelti klaidų. Pastebėjus, prašome pranešti mums
+          Galimai pastebėjote, kad kai kurie prekių ženklai buvo pašalinti.
+          Greitu metu sudėsime tai kas priklauso atgal, bei toliau pildysime
+          sąrašą. Radus klaidų, praneškite
           <Link href='mailto:stoprus@protonmail.com' passHref>
             <a className={styles.alertLink}>stoprus@protonmail.com</a>
           </Link>

@@ -10,3 +10,37 @@
 .cardHeader {
   padding: 0 !important;
 }
+
+.infoIcon {
+  /* font-size: 118px !important; */
+}
+
+.sourceListItem {
+  padding: 0;
+  max-width: 40rem;
+}
+
+.listHeader {
+  margin-left: 0.5rem;
+}
+
+.listItemAvatar {
+  width: 8rem;
+}
+
+.logo {
+  padding: 0.2rem;
+  border-radius: 0.25rem;
+  background: #f5f5f5;
+  width: 7rem;
+  height: 7rem;
+  box-shadow: 0 0 2px 0px #444;
+}
+
+.logo img {
+  object-fit: contain;
+}
+
+.sourcesAvatar {
+  min-width: 2rem;
+}

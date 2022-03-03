@@ -61,7 +61,7 @@ export const Navbar = ({
             </Tooltip>
           )}
 
-          <Link href='/qr' passHref>
+          {/* <Link href='/qr' passHref>
             <Tooltip
               title='Tikrinti kilmės šalį pagal brukšninį kodą'
               placement='bottom-end'
@@ -70,7 +70,7 @@ export const Navbar = ({
                 <QrCodeScanner className={styles.icon} />
               </IconButton>
             </Tooltip>
-          </Link>
+          </Link> */}
 
           {extraIcons}
 
