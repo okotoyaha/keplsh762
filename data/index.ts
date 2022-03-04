@@ -35,7 +35,12 @@ export const data: DataType[] = [
       {
         source: 'https://www.linkedin.com/in/oleg-talalay-93a3a718b/',
         connection:
-          '"Oleg Talalay <...> Experience: <...> Генеральный директор АО «УСК Мост»"',
+          '"Oleg Talalay <...> Experience: <...> Генеральный директор АО «УСК Мост»" (Šaltinis pašalintas)',
+      },
+      {
+        source: '/assets/dominos.png',
+        connection:
+          '"Oleg Talalay <...> Experience: <...> Генеральный директор АО «УСК Мост»" (Šaltinio nuotrauka)',
       },
       {
         source: 'http://old.skmost.ru/about/',
