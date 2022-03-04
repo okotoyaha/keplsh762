@@ -121,8 +121,12 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"Besides, we’re a Russian company, and we’re well known among Russian investors"',
+          '"Besides, we’re a Russian company, and we’re well known among Russian investors" (Apie Dodobrands)',
         source: 'https://dodobrands.io/investors/',
+      },
+      {
+        connection: '"5% royalty fee Paid monthly from revenue."',
+        source: 'https://dodobrands.io/franchising/',
       },
     ],
   },
