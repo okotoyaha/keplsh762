@@ -30,12 +30,12 @@ export const data: DataType[] = [
         source:
           'https://apnews.com/press-release/pr-newswire/europe-business-lithuania-0d22384f335c511918d2f9a9a22d0f40',
         connection:
-          'Oleg Talalay, executive director of D-Pizza LT, a subsidiary of Morgacita Limited',
+          '"Oleg Talalay, executive director of D-Pizza LT, a subsidiary of Morgacita Limited"',
       },
       {
         source: 'https://www.linkedin.com/in/oleg-talalay-93a3a718b/',
         connection:
-          'Oleg Talalay <...> Experience: <...> Генеральный директор АО «УСК Мост»',
+          '"Oleg Talalay <...> Experience: <...> Генеральный директор АО «УСК Мост»"',
       },
       {
         source: 'http://old.skmost.ru/about/',
