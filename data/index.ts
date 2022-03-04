@@ -555,9 +555,12 @@ export const data: DataType[] = [
     logo: 'https://topfranchise.com/upload/resize_cache/webp/iblock/c7c/c7c774780c662c0fcec7d5e47510add0.webp',
     sources: [
       {
-        connection:
-          'Lithuania (Литва, Вильнюс) <...> Dealer name: MORENDI LITHUANIA',
+        connection: 'Наши филиалы: <...> Компания: MORENDI LITHUANIA',
         source: 'https://www.morendi.ru/pages/company-partners',
+      },
+      {
+        connection: 'Наши филиалы: <...> Компания: MORENDI LITHUANIA',
+        source: '/assets/morendi.png',
       },
     ],
   },
