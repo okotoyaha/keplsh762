@@ -104,7 +104,8 @@ export const data: DataType[] = [
     about: 'Frančizė',
     sources: [
       {
-        connection: 'INFORMATION ABOUT THE BRAND',
+        connection:
+          '"Dodo Pizza franchisee in Klaipeda and Vilnius, Lithuania"',
         source:
           'https://topfranchise.com/products/pizza-delivery-franchise-dodo-pizza/',
       },
