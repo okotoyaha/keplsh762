@@ -559,7 +559,8 @@ export const data: DataType[] = [
         source: 'https://www.morendi.ru/pages/company-partners',
       },
       {
-        connection: 'Наши филиалы: <...> Компания: MORENDI LITHUANIA',
+        connection:
+          'Наши филиалы: <...> Компания: MORENDI LITHUANIA (2022-03-04 nuotrauka)',
         source: '/assets/morendi.png',
       },
     ],
