@@ -671,4 +671,30 @@ export const data: DataType[] = [
       },
     ],
   },
+  {
+    subject: 'Latvijas Balzams',
+    logo: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wine-searcher.com%2Fimages%2Flabels%2F73%2F04%2F10607304.jpg&f=1&nofb=1',
+    about: 'Alkoholiniai gėrimai',
+    sources: [
+      {
+        source:
+          'https://amberbev.com/wp-content/uploads/2021/12/ABG_Annual_report_2020_interactive.pdf',
+        connection:
+          'Alcohol for the production of most products is supplied by the Group company Talvis, which is one of the largest producers of high-quality alcohol in the Russian Federation',
+      },
+    ],
+  },
+  {
+    subject: 'Stolichnaya',
+    logo: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgullliquorstore.com%2Fwp-content%2Fuploads%2F2016%2F12%2Ffull-2947.jpeg&f=1&nofb=1',
+    about: 'Alkoholiniai gėrimai',
+    sources: [
+      {
+        source:
+          'https://amberbev.com/wp-content/uploads/2021/12/ABG_Annual_report_2020_interactive.pdf',
+        connection:
+          'Spirit produced by Talvis is the only source of spirit for the production of Stolichnaya Vodka at Latvijas balzams, supporting Stoli’s marketing concept “Originally from Russia”',
+      },
+    ],
+  },
 ]
