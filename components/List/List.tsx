@@ -23,10 +23,15 @@ import { useMediaQuery, useTheme } from '@mui/material'
 interface Props {
   data: DataType[]
   searchWords: string[]
+  supportLabel?: React.ReactNode
 }
 
 const LL = () => {}
-export const List = ({ data = [], searchWords = [] }: Props) => {
+export const List = ({
+  data = [],
+  searchWords = [],
+  supportLabel = 'BET',
+}: Props) => {
   const theme = useTheme()
   const smallScreen = useMediaQuery(theme.breakpoints.down('md'))
 
@@ -114,7 +119,7 @@ export const List = ({ data = [], searchWords = [] }: Props) => {
                             flexItem
                             sx={{ height: { md: '100%' } }}
                           >
-                            BET
+                            {supportLabel}
                           </Divider>
                         </Grid>
                         <Grid item xs={12} md>

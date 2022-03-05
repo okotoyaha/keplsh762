@@ -96,7 +96,11 @@ const Exited: NextPage = () => {
           </Button>
         </Alert>
 
-        <List data={results.length ? results : data} searchWords={terms} />
+        <List
+          data={results.length ? results : data}
+          searchWords={terms}
+          supportLabel='IR'
+        />
 
         {isSubmissionOpen && (
           <SubmissionModal
