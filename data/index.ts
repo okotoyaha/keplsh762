@@ -565,7 +565,6 @@ export const data: DataType[] = [
       },
     ],
   },
-
   {
     subject: 'Burger King',
     logo: 'https://logos-world.net/wp-content/uploads/2020/05/Burger-King-Logo.png',
@@ -573,5 +572,31 @@ export const data: DataType[] = [
     connection:
       '"Burger King fast food chain has no plans to leave Russia and still considers our country as one of the strategic markets"',
     source: 'https://www.akm.ru/eng/news/burger-king-will-remain-in-russia/',
+  },
+  {
+    subject: 'UCS Baltic',
+    logo: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNzkuNCA3Ni43IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNzkuNCA3Ni43OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzZGQUM1Mjt9Cjwvc3R5bGU+CjxnIGlkPSJYTUxJRF8xMDZfIj4KCTxnPgoJCTxwYXRoIGlkPSJYTUxJRF8xMTJfIiBkPSJNNTMuNSw0My43YzAsMTQuOS0xMC43LDI1LTI2LjcsMjVDMTAuOCw2OC43LDAsNTguNiwwLDQzLjdWMS4xaDEyLjF2NDIuNWMwLDksNS44LDE0LDE0LjcsMTQKCQkJYzguOSwwLDE0LjctNS4xLDE0LjctMTRWMS4xaDEyLjFWNDMuN3oiLz4KCQk8cmVjdCBpZD0iWE1MSURfMTExXyIgeD0iNTcuNyIgeT0iNjcuNSIgY2xhc3M9InN0MCIgd2lkdGg9IjUyLjUiIGhlaWdodD0iOS4yIi8+CgkJPHBhdGggaWQ9IlhNTElEXzExMF8iIGQ9Ik0xNDYuMiw2OC43Yy0yMC45LDAtMzQuMy0xNS4xLTM0LjMtMzQuNkMxMTEuOSwxNC44LDEyNiwwLDE0NiwwYzguNywwLDE4LjEsMi44LDI0LjUsOS4xbC01LjgsOQoJCQljLTQuNy00LTExLjctNy0xOC4yLTdjLTE0LjYsMC0yMi4zLDEwLjYtMjIuMywyMi44YzAsMTIuNCw4LDIzLjgsMjIuNCwyMy44YzcuMSwwLDE0LjItMy41LDE5LjMtOC40bDYuNCw4LjcKCQkJQzE2Ni42LDYzLjcsMTU4LjEsNjguNywxNDYuMiw2OC43eiIvPgoJCTxyZWN0IGlkPSJYTUxJRF8xMDlfIiB4PSIxNzYuNyIgeT0iNjcuNSIgY2xhc3M9InN0MCIgd2lkdGg9IjUyLjUiIGhlaWdodD0iOS4yIi8+CgkJPHBhdGggaWQ9IlhNTElEXzEwOF8iIGQ9Ik0yNTcuMyw2OC43Yy04LjIsMC0xNi43LTMuMS0yMi43LTkuMWw2LjUtOS4xYzMuOSwzLjYsMTAuMyw3LDE2LjUsN2M2LDAsOS43LTMuMSw5LjctNy42CgkJCWMwLTEyLjYtMzEtMTAtMzEtMzAuN0MyMzYuMyw3LjYsMjQ2LjEsMCwyNTksMGM2LjksMCwxNC4yLDIuMywxOS41LDcuMWwtNS4zLDkuOGMtMy42LTMuMy05LjQtNS44LTE0LjYtNS44CgkJCWMtNi4xLDAtMTAuMSwzLTEwLjEsNy42YzAsMTIuNCwzMSw5LjIsMzEsMzAuM0MyNzkuNCw1OS44LDI3MS41LDY4LjcsMjU3LjMsNjguN3oiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K',
+    about: 'Restoranų valdymo programinė įranga',
+    sources: [
+      {
+        connection:
+          '"Šiuo metu UCS Baltic siūlo naujausią sistemos versiją – r_keeper_7"',
+        source:
+          'https://www.ucs.lt/sprendimai/maitinimo-istaigoms/r-keeper-v7/',
+      },
+      {
+        connection: '"Dealers and regional offices: <...> UAB “UCS Baltic”"',
+        source: 'https://rkeeper.com/dealers/',
+      },
+      {
+        connection: '"R_keeper is the flagship product of UCS company "',
+        source: 'https://rkeeper.com/about/',
+      },
+      {
+        connection:
+          '"R_keeper offices are located in Moscow and Voronezh. The company employs over 300 people."',
+        source: 'https://rkeeper.com/about/',
+      },
+    ],
   },
 ]
