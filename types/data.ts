@@ -11,4 +11,5 @@ export interface DataType {
   connection?: Source['connection']
   source?: Source['source']
   sources?: Source[]
+  support?: Source[]
 }
