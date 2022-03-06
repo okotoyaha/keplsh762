@@ -19,6 +19,7 @@
     "@mui/material": "^5.4.3",
     "ahooks": "^3.1.13",
     "final-form": "^4.20.6",
+    "lodash-es": "^4.17.21",
     "minisearch": "^5.0.0-beta1",
     "next": "12.1.0",
     "quagga": "^0.12.1",

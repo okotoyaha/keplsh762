@@ -1,4 +1,4 @@
-import { useEffect, useRef, useContext } from 'react'
+import { useEffect, useRef, useContext, useMemo } from 'react'
 
 import ListItemAvatar from '@mui/material/ListItemAvatar'
 import Typography from '@mui/material/Typography'
@@ -27,7 +27,7 @@ interface Props extends DataType {
   supportLabel?: React.ReactNode
 }
 
-const FIVE_SECONDS = 5000
+const ONE_SECOND = 1000
 
 export const ListItem = ({
   subject,
@@ -43,6 +43,7 @@ export const ListItem = ({
   const theme = useTheme()
   const smallScreen = useMediaQuery(theme.breakpoints.down('md'))
   const { hasSeenSubject, setSubjectSeen } = useContext(StorageContext)
+  const memoHasSeenSubject = useMemo(() => hasSeenSubject(subject), [])
 
   const ref = useRef()
   const [inViewport] = useInViewport(ref, { threshold: 1 })
@@ -51,7 +52,7 @@ export const ListItem = ({
     const isFullyVisible = inViewport
 
     if (isFullyVisible) {
-      setTimeout(() => setSubjectSeen(subject), FIVE_SECONDS)
+      setTimeout(() => setSubjectSeen(subject), ONE_SECOND)
     }
   }, [inViewport, subject, setSubjectSeen])
 
@@ -62,14 +63,10 @@ export const ListItem = ({
   return (
     <MUIListItem alignItems='flex-start' component='div'>
       <ListItemAvatar className={styles.listItemAvatar} ref={ref}>
-        {hasSeenSubject(subject) ? (
+        {memoHasSeenSubject ? (
           logoAvatar
         ) : (
-          <Badge
-            color='warning'
-            badgeContent='Nauja'
-            invisible={hasSeenSubject(subject)}
-          >
+          <Badge color='warning' badgeContent='Nauja'>
             {logoAvatar}
           </Badge>
         )}

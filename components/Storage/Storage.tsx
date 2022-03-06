@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { useLocalStorageState } from 'ahooks'
+import uniq from 'lodash-es/uniq'
 
 interface Props {
   hasSeenSubject: (subject: string) => boolean
@@ -22,15 +23,16 @@ export const Storage: FC = ({ children }) => {
   const setSubjectSeen = (subject: string) => {
     const subjectKey = getStorageKey(subject)
 
-    if (!seen.includes(subjectKey)) {
-      setSeen((currentSeen = []) => {
+    setSeen((currentSeen = []) => {
+      if (!seen.includes(subjectKey)) {
         const newList = [...currentSeen]
-
         newList.push(subjectKey)
 
-        return newList
-      })
-    }
+        return uniq(newList)
+      }
+
+      return currentSeen
+    })
   }
 
   const hasSeenSubject = (subject: string) => {
