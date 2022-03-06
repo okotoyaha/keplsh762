@@ -53,7 +53,7 @@ export const ListItem = ({
     if (isFullyVisible) {
       setTimeout(() => setSubjectSeen(subject), FIVE_SECONDS)
     }
-  }, [inViewport])
+  }, [inViewport, subject, setSubjectSeen])
 
   const logoAvatar = (
     <Avatar alt={subject} src={logo} variant='square' className={styles.logo} />
@@ -69,8 +69,9 @@ export const ListItem = ({
             color='warning'
             badgeContent='Nauja'
             invisible={hasSeenSubject(subject)}
-            children={logoAvatar}
-          />
+          >
+            {logoAvatar}
+          </Badge>
         )}
       </ListItemAvatar>
       <ListItemText
