@@ -745,4 +745,15 @@ export const data: DataType[] = [
       },
     ],
   },
+  {
+    subject: 'EO Laboratorie',
+    logo: 'https://ec-l.ru/bitrix/templates/basic/img/main/logo_new.png',
+    about: 'Kosmetika',
+    sources: [
+      {
+        source: 'https://ec-l.ru/en/contacts/',
+        connection: '"HEADQUARTERS <...> Moscow"',
+      },
+    ],
+  },
 ]
