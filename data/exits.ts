@@ -58,4 +58,28 @@ export const data: DataType[] = [
     source:
       'https://www.businessinsider.com/russian-shoppers-swarm-ikea-stores-to-stock-up-2022-3?r=US&IR=T',
   },
+  {
+    subject: 'Latvijas Balzams',
+    logo: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wine-searcher.com%2Fimages%2Flabels%2F73%2F04%2F10607304.jpg&f=1&nofb=1',
+    about: 'Alkoholiniai gėrimai',
+    sources: [
+      {
+        source: '/stoli.png',
+        connection:
+          '"Dėl tiesioginės Rusijos agresijos prieš Ukrainą, SPI Group nusprendė nutraukti visus ryšius su Rusijos Alfa spirito tiekėjais"',
+      },
+    ],
+  },
+  {
+    subject: 'Stolichnaya',
+    logo: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgullliquorstore.com%2Fwp-content%2Fuploads%2F2016%2F12%2Ffull-2947.jpeg&f=1&nofb=1',
+    about: 'Alkoholiniai gėrimai',
+    sources: [
+      {
+        source: '/stoli.png',
+        connection:
+          '"Dėl tiesioginės Rusijos agresijos prieš Ukrainą, SPI Group nusprendė nutraukti visus ryšius su Rusijos Alfa spirito tiekėjais"',
+      },
+    ],
+  },
 ]
