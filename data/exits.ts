@@ -64,7 +64,7 @@ export const data: DataType[] = [
     about: 'Alkoholiniai gėrimai',
     sources: [
       {
-        source: '/stoli.png',
+        source: '/assets/stoli.png',
         connection:
           '"Dėl tiesioginės Rusijos agresijos prieš Ukrainą, SPI Group nusprendė nutraukti visus ryšius su Rusijos Alfa spirito tiekėjais"',
       },
@@ -76,7 +76,7 @@ export const data: DataType[] = [
     about: 'Alkoholiniai gėrimai',
     sources: [
       {
-        source: '/stoli.png',
+        source: '/assets/stoli.png',
         connection:
           '"Dėl tiesioginės Rusijos agresijos prieš Ukrainą, SPI Group nusprendė nutraukti visus ryšius su Rusijos Alfa spirito tiekėjais"',
       },
