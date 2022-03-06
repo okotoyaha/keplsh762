@@ -10,6 +10,9 @@ import Info from '@mui/icons-material/Info'
 import Tooltip from '@mui/material/Tooltip'
 import Avatar from '@mui/material/Avatar'
 import Badge from '@mui/material/Badge'
+import Grid from '@mui/material/Grid'
+import Divider from '@mui/material/Divider'
+import { useMediaQuery, useTheme } from '@mui/material'
 import Highlighter from 'react-highlight-words'
 
 import { useInViewport } from 'ahooks'
@@ -21,6 +24,7 @@ import styles from './ListItem.module.css'
 
 interface Props extends DataType {
   searchWords: string[]
+  supportLabel?: React.ReactNode
 }
 
 const FIVE_SECONDS = 5000
@@ -33,7 +37,11 @@ export const ListItem = ({
   sources,
   source,
   connection,
+  support,
+  supportLabel,
 }: Props) => {
+  const theme = useTheme()
+  const smallScreen = useMediaQuery(theme.breakpoints.down('md'))
   const { hasSeenSubject, setSubjectSeen } = useContext(StorageContext)
 
   const ref = useRef()
@@ -81,42 +89,95 @@ export const ListItem = ({
           </div>
         }
         secondary={
-          <MUIList component='div'>
-            {(sources || [{ source, connection }]).map(
-              ({ source = '', connection = '' }, index) => (
-                <MUIListItem
-                  key={source + connection + index}
-                  className={styles.sourceListItem}
-                  component='div'
-                >
-                  <ListItemAvatar className={styles.sourcesAvatar}>
-                    <Tooltip title={source || ''} placement='right'>
-                      <a
-                        href={source}
-                        target='_blank'
-                        rel='noopener noreferrer'
+          <Grid container gridAutoRows={1}>
+            <Grid item xs={12} md>
+              <MUIList component='div'>
+                {(sources || [{ source, connection }]).map(
+                  ({ source = '', connection = '' }) => (
+                    <MUIListItem
+                      key={`${source} ${connection}`}
+                      className={styles.sourceListItem}
+                      component='div'
+                    >
+                      <ListItemAvatar className={styles.sourcesAvatar}>
+                        <Tooltip title={source || ''} placement='right'>
+                          <a
+                            href={source}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                          >
+                            <IconButton edge='end' aria-label='delete'>
+                              <Info sx={{ fontSize: 16 }} />
+                            </IconButton>
+                          </a>
+                        </Tooltip>
+                      </ListItemAvatar>
+                      <ListItemText
+                        secondary={
+                          <Typography component='span' variant='caption'>
+                            <Highlighter
+                              searchWords={searchWords}
+                              textToHighlight={connection}
+                            />
+                          </Typography>
+                        }
+                      />
+                    </MUIListItem>
+                  )
+                )}
+              </MUIList>
+            </Grid>
+            {support && support.length && (
+              <>
+                <Grid item xs={12} md='auto'>
+                  <Divider
+                    orientation={smallScreen ? 'horizontal' : 'vertical'}
+                    flexItem
+                    sx={{ height: { md: '100%' } }}
+                  >
+                    {supportLabel}
+                  </Divider>
+                </Grid>
+                <Grid item xs={12} md>
+                  <MUIList component='div'>
+                    {support.map(({ source, connection }) => (
+                      <MUIListItem
+                        key={`${source}_${connection}`}
+                        className={styles.sourceListItem}
+                        component='div'
                       >
-                        <IconButton edge='end' aria-label='delete'>
-                          <Info sx={{ fontSize: 16 }} />
-                        </IconButton>
-                      </a>
-                    </Tooltip>
-                  </ListItemAvatar>
-                  <ListItemText
-                    secondary={
-                      <Typography component='span' variant='caption'>
-                        <Highlighter
-                          searchWords={searchWords}
-                          textToHighlight={connection}
+                        <ListItemAvatar className={styles.sourcesAvatar}>
+                          <Tooltip title={source || ''} placement='right'>
+                            <a
+                              href={source}
+                              target='_blank'
+                              rel='noopener noreferrer'
+                            >
+                              <IconButton edge='end' aria-label='delete'>
+                                <Info sx={{ fontSize: 16 }} />
+                              </IconButton>
+                            </a>
+                          </Tooltip>
+                        </ListItemAvatar>
+                        <ListItemText
+                          secondary={
+                            <Typography component='span' variant='caption'>
+                              <Highlighter
+                                searchWords={searchWords}
+                                textToHighlight={connection}
+                              />
+                            </Typography>
+                          }
                         />
-                      </Typography>
-                    }
-                  />
-                </MUIListItem>
-              )
+                      </MUIListItem>
+                    ))}
+                  </MUIList>
+                </Grid>
+              </>
             )}
-          </MUIList>
+          </Grid>
         }
+        secondaryTypographyProps={{ component: 'div' }}
       />
     </MUIListItem>
   )
