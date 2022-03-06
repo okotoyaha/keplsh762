@@ -749,7 +749,7 @@ export const data: DataType[] = [
           '"Mes esame du padaliniai – vienas, pagrindinis, yra Rusijoje, o čia, Širvintose, kiek mažesnis padalinys – langas į eksportą“, - sako <įmonės direktorė>',
       },
       {
-        source: 'https://www.riolis.ru/',
+        source: 'https://www.riolis.ru/shops',
         connection: 'Nuoroda į riolis.com',
       },
     ],
