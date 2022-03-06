@@ -15,6 +15,8 @@ import Link from 'next/link'
 import { Alert, IconButton, Tooltip } from '@mui/material'
 import ShoppingCart from '@mui/icons-material/ShoppingCart'
 import LinkOff from '@mui/icons-material/LinkOff'
+import { useLocalStorageState } from 'ahooks'
+
 import styles from './index.module.css'
 
 let miniSearch = new MiniSearch({
@@ -45,6 +47,18 @@ const Home: NextPage = () => {
   const [isSubmissionOpen, setIsSubmissionOpen] = useState(false)
   const [results, setResults] = useState<DataType[]>([])
   const [terms, setTerms] = useState<string[]>([])
+  const [seenInfoBanner, setSeenInfoBanner] = useLocalStorageState<boolean>(
+    'seen-info-banner',
+    {
+      defaultValue: false,
+    }
+  )
+  const [seenExitedBanner, setSeenExitedBanner] = useLocalStorageState<boolean>(
+    'seen-exited-banner',
+    {
+      defaultValue: false,
+    }
+  )
 
   const executeSearch = (value = '') => {
     const queryResults = miniSearch.search(value)
@@ -101,24 +115,30 @@ const Home: NextPage = () => {
           }
         />
 
-        <Alert severity='info'>
-          Galimai pastebėjote, kad kai kurie prekių ženklai buvo pašalinti.
-          Greitu metu sudėsime tai kas priklauso atgal, bei toliau pildysime
-          sąrašą. Radus klaidų, praneškite
-          <Link href='mailto:stoprus@protonmail.com' passHref>
-            <a className={styles.alertLink}>stoprus@protonmail.com</a>
-          </Link>
-        </Alert>
+        <div>
+          {!seenInfoBanner && (
+            <Alert severity='info' onClose={() => setSeenInfoBanner(true)}>
+              Galimai pastebėjote, kad kai kurie prekių ženklai buvo pašalinti.
+              Greitu metu sudėsime tai kas priklauso atgal, bei toliau pildysime
+              sąrašą. Radus klaidų, praneškite
+              <Link href='mailto:stoprus@protonmail.com' passHref>
+                <a className={styles.alertLink}>stoprus@protonmail.com</a>
+              </Link>
+            </Alert>
+          )}
 
-        <Alert severity='success'>
-          Taip pat pradėjome rinkti
-          <Link href='/exited' passHref>
-            <a className={styles.alertLink}>sąrašą subjektų</a>
-          </Link>
-          , kurie pareiškė ketinimus nutraukti sąsajas ir/arba konkrečiais
-          veiksmais parėmė Ukrainą. Šiuo metu labai reikia patikimų duomenų!
-          Dėkui!
-        </Alert>
+          {!seenExitedBanner && (
+            <Alert severity='success' onClose={() => setSeenExitedBanner(true)}>
+              Taip pat pradėjome rinkti
+              <Link href='/exited' passHref>
+                <a className={styles.alertLink}>sąrašą subjektų</a>
+              </Link>
+              , kurie pareiškė ketinimus nutraukti sąsajas ir/arba konkrečiais
+              veiksmais parėmė Ukrainą. Šiuo metu labai reikia patikimų duomenų!
+              Dėkui!
+            </Alert>
+          )}
+        </div>
 
         <List data={results.length ? results : data} searchWords={terms} />
 

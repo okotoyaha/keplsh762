@@ -155,7 +155,8 @@ export const data: DataType[] = [
       {
         connection:
           '"Dėl karinių veiksmų tūkstančiai ukrainiečių buvo priversti palikti namus. Pasirengę padėti Ukrainos žmonėms, iš karo gniaužtų atvykusiems į Lietuvą. Įmonė suteiks 100 darbo vietų Ukrainos pabėgėliams, taip juos grąžinant į pilnavertį gyvenimą ir padedant užtikrinti finansinį stabilumą."',
-        source: 'https://www.facebook.com/ViadaLietuva/posts/2133771303443107',
+        source:
+          'https://www.facebook.com/ViadaLietuva/posts/2133771303443107?2',
       },
     ],
   },
