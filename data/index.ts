@@ -628,7 +628,7 @@ export const data: DataType[] = [
     about: 'Bankas/fintech įmonė',
     sources: [
       {
-        connection: 'Ofisas Maskvoje',
+        connection: 'Padalinys Maskvoje',
         source: 'https://www.revolut.com/en-IE/careers?city=Moscow',
       },
     ],
