@@ -628,30 +628,8 @@ export const data: DataType[] = [
     about: 'Bankas/fintech įmonė',
     sources: [
       {
-        connection:
-          '"„Revolut“ vadovo Nikolajaus Storonskio <...> tėvas yra Nikolajus Mironovičius Storonskis – „Gazprom“ tyrimų centro „Gazprom promgaz“ generalinio direktoriaus pavaduotojas mokslui. N.M.Storonskis – ne tik tyrimų centro pareigūnas, bet ir Rusijos valdžios apdovanotas ordinu už nuopelnus tėvynei, taip pat du kartus garbės sertifikatais įvertintas paties „Gazprom“"',
-        source:
-          'https://www.15min.lt/verslas/naujiena/finansai/lrt-tyrimas-slaptose-pazymose-apie-revolut-rysiai-su-kremliumi-662-1091230',
-      },
-      {
         connection: 'Ofisas Maskvoje',
         source: 'https://www.revolut.com/en-IE/careers?city=Moscow',
-      },
-      {
-        connection:
-          '"Revolut <...> announced their Series C fundraise of $250M, led by Hong-Kong based DST Global."',
-        source:
-          'https://www.balderton.com/news/london-based-revolut-raises-250m-in-series-c-funding/',
-      },
-      {
-        connection: '"DST Global’s founder is Yuri Milner"',
-        source: 'https://dst-global.com/',
-      },
-      {
-        connection:
-          '"Leaked files show that a state-controlled bank in Moscow helped to fuel Yuri Milner’s ascent in Silicon Valley"',
-        source:
-          'https://www.nytimes.com/2017/11/05/world/yuri-milner-facebook-twitter-russia.html',
       },
     ],
     support: [
