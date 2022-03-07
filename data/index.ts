@@ -5,6 +5,23 @@ export const getId = () => i++
 
 export const data: DataType[] = [
   {
+    logo: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCAzNSI+PHBhdGggZmlsbD0iI0ZGQkMwRCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjguNzUgMi41QzMyLjIwMyAyLjUgMzUgMTcuMDUxIDM1IDM1aDVjMC0xOS4zMy01LjAzNi0zNS0xMS4yNS0zNS0zLjUzNCAwLTYuNjg3IDQuNzEtOC43NSAxMi4wNzRDMTcuOTQgNC43MDkgMTQuNzg2IDAgMTEuMjUgMCA1LjAzOSAwIDAgMTUuNjcgMCAzNWg1QzUgMTcuMDUxIDcuOCAyLjUgMTEuMjUgMi41YzMuNDUyIDAgNi4yNTIgMTMuNDMyIDYuMjUyIDMwSDIyLjVjMC0xNi41NjggMi44LTMwIDYuMjUtMzAiPjwvcGF0aD48L3N2Zz4K',
+    subject: 'McDonalds',
+    about: 'Greito maisto restoranas',
+    sources: [
+      {
+        connection: '"Макдоналдс в России"',
+        source: 'https://mcdonalds.ru/mcdonalds_in_russia',
+      },
+      {
+        connection:
+          '"McDonald’s <...> owns a large majority of its restaurants in Russia"',
+        source:
+          'https://www.cnbc.com/2022/03/07/ukraine-news-mcdonalds-declines-to-comment-on-war-has-exposure-in-russia.html',
+      },
+    ],
+  },
+  {
     logo: 'https://seeklogo.com/images/T/Tez_tour-logo-DCB77D74A9-seeklogo.com.png',
     subject: 'tez-tour.com',
     about: 'Kelionių organizatorius',
