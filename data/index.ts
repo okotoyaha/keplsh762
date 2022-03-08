@@ -645,4 +645,20 @@ export const data: DataType[] = [
       },
     ],
   },
+  {
+    subject: 'Letique',
+    logo: 'https://letique.com/assets/img/logo.svg',
+    about: 'Kosmetika',
+    sources: [
+      {
+        source: 'https://letique.com/about',
+        connection:
+          '"One of our founders is the famous blogger, Lera Chekalina"',
+      },
+      {
+        source: 'https://letique.uk/en/content/4-about-the-company',
+        connection: '"Famous Russian blogger-LERA CHEKALINA"',
+      },
+    ],
+  },
 ]
