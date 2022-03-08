@@ -223,4 +223,17 @@ export const data: DataType[] = [
     logo: 'https://www.motoshop.lt/skin/frontend/default/motoshop/images/logo.png',
     connection: 'Vičiūnai Group narė',
   },
+  {
+    logo: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCAzNSI+PHBhdGggZmlsbD0iI0ZGQkMwRCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjguNzUgMi41QzMyLjIwMyAyLjUgMzUgMTcuMDUxIDM1IDM1aDVjMC0xOS4zMy01LjAzNi0zNS0xMS4yNS0zNS0zLjUzNCAwLTYuNjg3IDQuNzEtOC43NSAxMi4wNzRDMTcuOTQgNC43MDkgMTQuNzg2IDAgMTEuMjUgMCA1LjAzOSAwIDAgMTUuNjcgMCAzNWg1QzUgMTcuMDUxIDcuOCAyLjUgMTEuMjUgMi41YzMuNDUyIDAgNi4yNTIgMTMuNDMyIDYuMjUyIDMwSDIyLjVjMC0xNi41NjggMi44LTMwIDYuMjUtMzAiPjwvcGF0aD48L3N2Zz4K',
+    subject: 'McDonalds',
+    about: 'Greito maisto restoranas',
+    sources: [
+      {
+        connection:
+          '"McDonald’s has decided to temporarily close all our restaurants in Russia and pause all operations in the market"',
+        source:
+          'https://corporate.mcdonalds.com/corpmcd/en-us/our-stories/article/ourstories.Russia-update.html',
+      },
+    ],
+  },
 ]
