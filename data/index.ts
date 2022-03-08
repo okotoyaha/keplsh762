@@ -689,4 +689,22 @@ export const data: DataType[] = [
       },
     ],
   },
+  {
+    subject: 'Squalio',
+    about: 'Informacinės technologijos, saugumo sprendimai ir licencijos',
+    logo: 'https://softline.ru/images/svg/softline_we_know_logo.svg',
+    sources: [
+      {
+        source:
+          'https://softline.com/about/news/softline-expands-european-presence-through-acquisition-of-squalio',
+        connection:
+          '"Softline <...> acquires the licensing business of Squalio"',
+      },
+      {
+        source: 'https://www.reuters.com/article/us-softline-ipo-idUSKBN2CT1CS',
+        connection:
+          '"Russian tech company Softline considers IPO after annual turnover boost"',
+      },
+    ],
+  },
 ]
