@@ -661,4 +661,32 @@ export const data: DataType[] = [
       },
     ],
   },
+  {
+    subject: 'CityService',
+    logo: 'https://www.cityservice.eu/themes/cityservice/images/main-logo.svg',
+    about: 'Kompanijų grupė',
+    sources: [
+      {
+        source:
+          'https://www.cityservice.eu/assets/Uploads/Files/City-Service-SE-2021-Q4-Interim-consolidated-financial-statements.pdf',
+        connection: '"OAO Cити Сервис <...> St. Petersburg"',
+      },
+    ],
+  },
+  {
+    subject: 'Mano Būstas',
+    logo: 'https://www.cityservice.eu/assets/Uploads/Companies/region-company-logo-Mano-bustas-02.svg',
+    about: 'Namų administratorius',
+    sources: [
+      {
+        source: 'https://www.cityservice.eu/regions/lithuania',
+        connection: 'Grupės CityService dalis',
+      },
+      {
+        source:
+          'https://www.cityservice.eu/assets/Uploads/Files/City-Service-SE-2021-Q4-Interim-consolidated-financial-statements.pdf',
+        connection: '"OAO Cити Сервис <...> St. Petersburg"',
+      },
+    ],
+  },
 ]
