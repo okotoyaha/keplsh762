@@ -16,9 +16,10 @@ import styles from './SubmissionModal.module.css'
 
 interface Props {
   onClose: () => void
-  endpoint: string
+  endpoint?: string
   beforeForm?: ReactNode
   subject?: string
+  submitMethod?: (data: any) => Promise<any>
 }
 
 const validHttpUrl = (value: string) => {
@@ -152,34 +153,46 @@ export const SubmissionModal = ({
   endpoint,
   beforeForm,
   subject,
+  submitMethod,
 }: Props) => {
   const [message, setMessage] = useState('')
 
-  const onSubmit = (values: any) => {
-    const errors = validateForm(values)
-
-    if (Object.keys(errors).length) {
-      return errors
-    }
-
+  const defaultSubmitMethod = (data: any) => {
     const formData = new FormData()
-    Object.entries(values).forEach(([key, value]) => {
+
+    Object.entries(data).forEach(([key, value]) => {
       if (subject) {
         formData.append('fp_subject', subject)
       }
       formData.append(key, String(value))
     })
 
-    fetch(endpoint, {
+    if (!endpoint) {
+      throw Error('Endpoint not specified')
+    }
+
+    return fetch(endpoint, {
       method: 'post',
       body: formData,
       mode: 'no-cors',
-    }).then(() => {
-      setMessage(
-        'Dėkui! Peržiūrėsime ir pridėsime įrašą greitu metu. Langas pats užsidarys po 5 sekundžių'
-      )
-      setTimeout(onClose, 5000)
     })
+  }
+
+  const submitFn = submitMethod || defaultSubmitMethod
+
+  const onSubmit = async (values: any) => {
+    const errors = validateForm(values)
+
+    if (Object.keys(errors).length) {
+      return errors
+    }
+
+    await submitFn(values)
+
+    setMessage(
+      'Dėkui! Peržiūrėsime ir pridėsime įrašą greitu metu. Langas pats užsidarys po 5 sekundžių'
+    )
+    setTimeout(onClose, 5000)
   }
 
   return (

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import MiniSearch from 'minisearch'
+import { useLocalStorageState } from 'ahooks'
 
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 
@@ -15,7 +16,8 @@ import Link from 'next/link'
 import { Alert, IconButton, Tooltip } from '@mui/material'
 import ShoppingCart from '@mui/icons-material/ShoppingCart'
 import LinkOff from '@mui/icons-material/LinkOff'
-import { useLocalStorageState } from 'ahooks'
+
+import { submitData } from '../data/api-post'
 
 import styles from './index.module.css'
 
@@ -147,8 +149,8 @@ const Home: NextPage = () => {
             beforeForm={
               <Alert severity='warning'>Pridėkite susijusį subjektą</Alert>
             }
+            submitMethod={submitData}
             onClose={onModalClose}
-            endpoint='https://formpost.app/stoprus@protonmail.com'
           />
         )}
       </div>
