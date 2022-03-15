@@ -806,4 +806,28 @@ export const data: DataType[] = [
     logo: 'https://www.motoshop.lt/skin/frontend/default/motoshop/images/logo.png',
     connection: 'Vičiūnai Group narė',
   },
+  {
+    subject: 'Huggies',
+    about: 'Sauskelnės',
+    logo: 'https://www.careers.kimberly-clark.com/-/media/Project/GlobalCareer/Common/BrandCarousel/huggies-logo.png?h=49&w=79&hash=7B9F2EF2F5AE31B6D5D83207EC7E1A20',
+    sources: [
+      {
+        source: 'https://www.careers.kimberly-clark.com/en/russian-federation',
+        connection:
+          '"With an office and manufacturing in the Russian Federation, Kimberly-Clark <...>"',
+      },
+      {
+        source:
+          'https://investor.kimberly-clark.com/news-releases/news-release-details/kimberly-clark-opens-first-manufacturing-plant-russia',
+        connection:
+          '"Kimberly-Clark Corporation (NYSE: KMB) held a grand opening ceremony of its first plant in Stupino, Russia, which is located near Moscow. The new state-of-the-art manufacturing facility features two HUGGIES® diaper lines."',
+      },
+      {
+        source:
+          'https://www.wsj.com/livecoverage/russia-ukraine-latest-news-2022-03-09/card/huggies-maker-to-keep-selling-products-in-russia-XZEQ4L4XxWRKWdJMxEki',
+        connection:
+          '"Kimberly-Clark Corp., maker of Huggies diapers and Cottonelle toilet paper, said Wednesday that it would continue selling products in Russia while halting capital spending and advertising."',
+      },
+    ],
+  },
 ]
