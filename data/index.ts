@@ -658,4 +658,28 @@ export const data: DataType[] = [
       },
     ],
   },
+  {
+    subject: 'Senukai',
+    about: 'Statybos ir namų apyvokos prekės',
+    logo: 'https://www.oma.by/upload/iblock/446/446198975f373b272c1d4c68f80c8f93.jpg',
+    sources: [
+      {
+        source:
+          'https://www.keskosenukai.com/kontaktai/lietuva/mazmenine-prekyba/?country=4&city=0&type=',
+        connection: 'Parduotuvės Baltarusijoje',
+      },
+      {
+        source: 'https://www.oma.by/brands/kesko_senukai/',
+        connection:
+          '"Kesko Senukai <...> Сейчас это концерн с несколькими структурными подразделениями в разных странах. В структуру входит также и Компания ОМА." ("Now it is a concern with several structural divisions in different countries. The structure also includes the OMA Company." - Google Translate)',
+      },
+    ],
+    support: [
+      {
+        source: 'https://www.facebook.com/eSenukai/posts/5699805613369560',
+        connection:
+          '"Ukrainos Raudonajam kryžiui skyrė 100 tūkst. eurų. Bendrovė jau nutraukė savo reklamos transliavimą Rusijos kanaluose Lietuvoje, Latvijoje ir Estijoje, taip pat sustabdė rusiškos kilmės prekių pirkimus."',
+      },
+    ],
+  },
 ]
