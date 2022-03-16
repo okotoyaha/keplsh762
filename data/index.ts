@@ -19,6 +19,11 @@ export const data: DataType[] = [
         source:
           'https://www.tez-tour.com/articles.html?categoryName=aboutCompany',
       },
+      {
+        connection:
+          'tez-tour.com svetainėje - lietuviška kelionių rezervavimo sistema',
+        source: 'https://book.tez-tour.com/book/vc/site_lt/spo_lt',
+      },
     ],
     support: [
       {
