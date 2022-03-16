@@ -34,7 +34,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '„Mes solidarizuojamės su Ukrainos žmonėmis, palaikome nuolatinį ryšį su Konsuliniu departamentu ir esame pasiruošę nemokamai į Lietuvą parskraidinti užsienyje įstrigusius šios šalies žmones savo vykdomais užsakomaisiais skrydžiais. Kartu su partneriais jau rūpinamės nespėjusių grįžti ukrainiečių nakvyne, pervežimais svečiose šalyse, teikiame ir teiksime kitą reikalingą pagalbą“, – sako Aleksandras Sukovas, <UAB> „Tez Tour“ direktorius.',
+          '„<...> esame pasiruošę nemokamai į Lietuvą parskraidinti užsienyje įstrigusius šios šalies žmones savo vykdomais užsakomaisiais skrydžiais. Kartu su partneriais jau rūpinamės nespėjusių grįžti ukrainiečių nakvyne, pervežimais svečiose šalyse, teikiame ir teiksime kitą reikalingą pagalbą“, – sako Aleksandras Sukovas, <UAB> „Tez Tour“ direktorius.',
         source:
           'https://www.delfi.lt/multimedija/verslas-kartu-su-ukraina/tez-tour-padeda-parskraidinti-uzsienyje-esancius-ukrainos-zmones.d?id=89611355',
       },

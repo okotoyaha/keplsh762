@@ -17,7 +17,7 @@ import { Alert, IconButton, Tooltip } from '@mui/material'
 import ShoppingCart from '@mui/icons-material/ShoppingCart'
 import LinkOff from '@mui/icons-material/LinkOff'
 
-import { submitData } from '../data/api-post'
+import { submitData } from '../data/apiPost'
 
 import styles from './index.module.css'
 
