@@ -17,7 +17,7 @@ import { Alert, IconButton, Tooltip } from '@mui/material'
 import ShoppingCart from '@mui/icons-material/ShoppingCart'
 import LinkOff from '@mui/icons-material/LinkOff'
 
-import { submitData } from '../data/apiPost'
+import { createCompany } from '../data/api'
 
 import styles from './index.module.css'
 
@@ -149,7 +149,7 @@ const Home: NextPage = () => {
             beforeForm={
               <Alert severity='warning'>Pridėkite susijusį subjektą</Alert>
             }
-            submitMethod={submitData}
+            submitMethod={createCompany}
             onClose={onModalClose}
           />
         )}
