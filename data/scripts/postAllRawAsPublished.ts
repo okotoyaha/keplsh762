@@ -19,7 +19,7 @@ async function run() {
         {
           ...postResponse.data,
           status: 'published',
-          country: 'Russia',
+          country: 'russia',
         },
         { apiKey: API_KEY! }
       )
@@ -27,7 +27,9 @@ async function run() {
       console.log(` - Success ${index + 1}/${rawData.length}`)
     } catch (error: any) {
       throw new Error(
-        `Could not post ${JSON.stringify(entry)}: ${error.toString()}`
+        `Could not post ${JSON.stringify(entry)}:\n\n${
+          error.response?.data?.message || error.toString()
+        }`
       )
     }
   }
