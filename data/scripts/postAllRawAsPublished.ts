@@ -1,3 +1,4 @@
+import { DataType } from '../../types/data'
 import { createCompany, updateCompany } from '../api'
 import rawData from './rawData'
 
@@ -9,9 +10,25 @@ if (!API_KEY) {
 
 console.log(`Importing ${rawData.length} raw records`)
 
+function positiveOnly(entry: DataType) {
+  return {
+    ...entry,
+    support: [
+      ...(entry.support || []),
+      ...(entry.sources || [
+        { source: entry.source!, connection: entry.connection! },
+      ]),
+    ],
+    sources: [],
+    source: undefined,
+    connection: undefined,
+  }
+}
+
 async function run() {
   for (let index = 0; index < rawData.length; index++) {
-    const entry = rawData[index]
+    let entry = rawData[index]
+    entry = positiveOnly(entry)
     try {
       const postResponse = await createCompany(entry)
 
@@ -20,6 +37,7 @@ async function run() {
           ...postResponse.data,
           status: 'published',
           country: 'russia',
+          category: 'refused',
         },
         { apiKey: API_KEY! }
       )

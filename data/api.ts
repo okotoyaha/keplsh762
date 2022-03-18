@@ -4,6 +4,26 @@ import { DataType } from '../types/data'
 
 const axiosLimited = rateLimit(axios.create(), { maxRPS: 5 })
 
+function buildRows({
+  sources,
+  connection,
+  source,
+  support,
+}: Partial<DataType>) {
+  return [
+    ...(sources || [{ connection, source }]).map(({ connection, source }) => ({
+      type: 'negative',
+      text: connection,
+      source: source,
+    })),
+    ...(support || []).map(({ connection, source }) => ({
+      type: 'positive',
+      text: connection,
+      source: source,
+    })),
+  ]
+}
+
 const BASE_URL = 'https://api.suukraina.lt/v1'
 export function createCompany({
   subject,
@@ -13,26 +33,13 @@ export function createCompany({
   source,
   sources,
   support,
-}: DataType) {
+}: DataType & { invertRows?: boolean }) {
   const data = {
     title: subject,
     description: about,
     category: 'active',
     imageUrl: logo,
-    rows: [
-      ...(sources || [{ connection, source }]).map(
-        ({ connection, source }) => ({
-          type: 'negative',
-          text: connection,
-          source: source,
-        })
-      ),
-      ...(support || []).map(({ connection, source }) => ({
-        type: 'positive',
-        text: connection,
-        source: source,
-      })),
-    ],
+    rows: buildRows({ sources, connection, source, support }),
   }
 
   return axiosLimited.post(`${BASE_URL}/company`, data)
@@ -43,6 +50,7 @@ export function updateCompany(
     id,
     status,
     country,
+    category = 'active',
     subject,
     about,
     logo,
@@ -54,6 +62,7 @@ export function updateCompany(
     id: string
     status: 'published' | 'new' | 'reviewed' | 'waiting'
     country?: string
+    category: 'active' | 'refused'
   },
   { apiKey }: { apiKey: string }
 ) {
@@ -63,22 +72,9 @@ export function updateCompany(
     country,
     title: subject,
     description: about,
-    category: 'active',
+    category,
     imageUrl: logo,
-    rows: [
-      ...(sources || [{ connection, source }]).map(
-        ({ connection, source }) => ({
-          type: 'negative',
-          text: connection,
-          source: source,
-        })
-      ),
-      ...(support || []).map(({ connection, source }) => ({
-        type: 'positive',
-        text: connection,
-        source: source,
-      })),
-    ],
+    rows: buildRows({ sources, connection, source, support }),
   }
 
   return axiosLimited.put(`${BASE_URL}/company`, data, {
