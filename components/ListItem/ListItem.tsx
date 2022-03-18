@@ -25,6 +25,7 @@ import styles from './ListItem.module.css'
 interface Props extends DataType {
   searchWords: string[]
   supportLabel?: React.ReactNode
+  supportOnly?: boolean
 }
 
 const ONE_SECOND = 1000
@@ -39,6 +40,7 @@ export const ListItem = ({
   connection,
   support,
   supportLabel,
+  supportOnly = false,
 }: Props) => {
   const theme = useTheme()
   const smallScreen = useMediaQuery(theme.breakpoints.down('md'))
@@ -88,54 +90,58 @@ export const ListItem = ({
         }
         secondary={
           <Grid container gridAutoRows={1}>
-            <Grid item xs={12} md>
-              <MUIList component='div'>
-                {(sources || [{ source, connection }]).map(
-                  ({ source = '', connection = '' }) => (
-                    <MUIListItem
-                      key={`${source} ${connection}`}
-                      className={styles.sourceListItem}
-                      component='div'
-                    >
-                      <ListItemAvatar className={styles.sourcesAvatar}>
-                        <Tooltip title={source || ''} placement='right'>
-                          <a
-                            href={source}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                          >
-                            <IconButton edge='end' aria-label='delete'>
-                              <Info sx={{ fontSize: 16 }} />
-                            </IconButton>
-                          </a>
-                        </Tooltip>
-                      </ListItemAvatar>
-                      <ListItemText
-                        secondary={
-                          <Typography component='span' variant='caption'>
-                            <Highlighter
-                              searchWords={searchWords}
-                              textToHighlight={connection}
-                            />
-                          </Typography>
-                        }
-                      />
-                    </MUIListItem>
-                  )
-                )}
-              </MUIList>
-            </Grid>
+            {!supportOnly && (
+              <Grid item xs={12} md>
+                <MUIList component='div'>
+                  {(sources || [{ source, connection }]).map(
+                    ({ source = '', connection = '' }) => (
+                      <MUIListItem
+                        key={`${source} ${connection}`}
+                        className={styles.sourceListItem}
+                        component='div'
+                      >
+                        <ListItemAvatar className={styles.sourcesAvatar}>
+                          <Tooltip title={source || ''} placement='right'>
+                            <a
+                              href={source}
+                              target='_blank'
+                              rel='noopener noreferrer'
+                            >
+                              <IconButton edge='end' aria-label='delete'>
+                                <Info sx={{ fontSize: 16 }} />
+                              </IconButton>
+                            </a>
+                          </Tooltip>
+                        </ListItemAvatar>
+                        <ListItemText
+                          secondary={
+                            <Typography component='span' variant='caption'>
+                              <Highlighter
+                                searchWords={searchWords}
+                                textToHighlight={connection}
+                              />
+                            </Typography>
+                          }
+                        />
+                      </MUIListItem>
+                    )
+                  )}
+                </MUIList>
+              </Grid>
+            )}
             {support && support.length && (
               <>
-                <Grid item xs={12} md='auto'>
-                  <Divider
-                    orientation={smallScreen ? 'horizontal' : 'vertical'}
-                    flexItem
-                    sx={{ height: { md: '100%' } }}
-                  >
-                    {supportLabel}
-                  </Divider>
-                </Grid>
+                {!supportOnly && (
+                  <Grid item xs={12} md='auto'>
+                    <Divider
+                      orientation={smallScreen ? 'horizontal' : 'vertical'}
+                      flexItem
+                      sx={{ height: { md: '100%' } }}
+                    >
+                      {supportLabel}
+                    </Divider>
+                  </Grid>
+                )}
                 <Grid item xs={12} md>
                   <MUIList component='div'>
                     {support.map(({ source, connection }) => (

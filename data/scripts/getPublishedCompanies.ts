@@ -1,6 +1,9 @@
+import fs from 'fs'
+import path from 'path'
+import prettier from 'prettier'
+import he from 'he'
 import { DataType } from '../../types/data'
-import { createCompany, getCompanies, updateCompany } from '../api'
-import rawData from './rawData'
+import { getCompanies } from '../api'
 
 const { API_KEY } = process.env
 
@@ -26,44 +29,108 @@ interface Company {
   }>
 }
 
-const PAGE_SIZE = 10
-async function run() {
-  const result: DataType[] = []
+const PAGE_SIZE = 100
+
+async function gatherAllPages({
+  category,
+}: {
+  category: 'active' | 'refused'
+}) {
   let responseLength = PAGE_SIZE
+  let page = 0
+  const results: Company[] = []
   do {
+    page += 1
     const response = await getCompanies({
-      category: 'active',
-      page: 1,
+      category,
+      page,
       size: PAGE_SIZE,
       apiKey: API_KEY!,
     })
     responseLength = response.data.items.length
 
     response.data.items.forEach((item: Company) => {
-      result.push({
-        id: item.id,
-        about: item.description,
-        logo: item.imageUrl,
-        subject: item.title,
-        sources: item.rows
-          .filter((row) => row.type === 'negative')
-          .map((row) => ({
-            connection: row.text,
-            source: row.source,
-          })),
-        support: item.rows
-          .filter((row) => row.type === 'positive')
-          .map((row) => ({
-            connection: row.text,
-            source: row.source,
-          })),
-      })
+      results.push(item)
     })
 
     console.log(`Fetched ${responseLength} items`)
   } while (responseLength === PAGE_SIZE)
+  return results.sort((a, b) => a.id - b.id)
+}
 
-  console.log(JSON.stringify(result, null, 2))
+function toDataType(company: Company) {
+  return {
+    id: company.id,
+    about: he.decode(company.description),
+    logo: company.imageUrl,
+    subject: he.decode(company.title),
+    sources: company.rows
+      .filter((row) => row.type === 'negative')
+      .map((row) => ({
+        connection: he.decode(row.text),
+        source: row.source,
+      })),
+    support: company.rows
+      .filter((row) => row.type === 'positive')
+      .map((row) => ({
+        connection: he.decode(row.text),
+        source: row.source,
+      })),
+  }
+}
+
+async function fetchPublishedCompanies() {
+  const results = {
+    index: [] as DataType[],
+    exits: [] as DataType[],
+    ukrainian: [] as DataType[],
+  }
+
+  const activeCompanies = await gatherAllPages({ category: 'active' })
+  activeCompanies.forEach((company) => {
+    const destination =
+      company.country.toLowerCase() === 'ukraine'
+        ? results.ukrainian
+        : results.index
+
+    destination.push(toDataType(company))
+  })
+
+  const refusedCompanies = await gatherAllPages({ category: 'refused' })
+  results.exits = refusedCompanies.map(toDataType)
+
+  return results
+}
+
+async function run() {
+  const prettierConfig = await prettier.resolveConfig(__filename)
+  const results = await fetchPublishedCompanies()
+
+  const toDataFile = (json: any) =>
+    prettier.format(
+      `
+        import { DataType } from '../types/data'
+
+        let i = 0
+        export const getId = () => i++
+
+        export const data: DataType[] = ${JSON.stringify(json, null, 2)};
+      `,
+      { ...prettierConfig, filepath: 'index.ts' }
+    )
+
+  fs.writeFileSync(
+    path.join(__dirname, '..', 'indexGenerated.ts'),
+    toDataFile(results.index)
+  )
+  fs.writeFileSync(
+    path.join(__dirname, '..', 'exitsGenerated.ts'),
+    toDataFile(results.exits)
+  )
+  fs.writeFileSync(
+    path.join(__dirname, '..', 'ukrainianGenerated.ts'),
+    toDataFile(results.ukrainian)
+  )
 }
 
 run().catch((error) => {

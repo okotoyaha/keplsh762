@@ -11,7 +11,7 @@ import { List } from '../components/List/List'
 import { SubmissionModal } from '../components/SubmissionModal/SubmissionModal'
 
 import { DataType } from '../types/data'
-import { data, getId } from '../data/exits'
+import { data, getId } from '../data/exitsGenerated'
 import Link from 'next/link'
 import { Alert, Button, IconButton, Tooltip } from '@mui/material'
 import Home from '@mui/icons-material/Home'
@@ -100,6 +100,7 @@ const Exited: NextPage = () => {
           data={results.length ? results : data}
           searchWords={terms}
           supportLabel='IR'
+          supportOnly
         />
 
         {isSubmissionOpen && (

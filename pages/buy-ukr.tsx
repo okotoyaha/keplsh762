@@ -11,7 +11,7 @@ import { List } from '../components/List/List'
 import { SubmissionModal } from '../components/SubmissionModal/SubmissionModal'
 
 import { DataType } from '../types/data'
-import { data, getId } from '../data/ukrainian'
+import { data, getId } from '../data/ukrainianGenerated'
 import Link from 'next/link'
 import { Alert, IconButton, Tooltip } from '@mui/material'
 import Home from '@mui/icons-material/Home'
@@ -84,7 +84,11 @@ const BuyUkr: NextPage = () => {
           }
         />
 
-        <List data={results.length ? results : data} searchWords={terms} />
+        <List
+          data={results.length ? results : data}
+          searchWords={terms}
+          supportOnly
+        />
 
         {isSubmissionOpen && (
           <SubmissionModal

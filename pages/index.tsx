@@ -11,7 +11,7 @@ import { List } from '../components/List/List'
 import { SubmissionModal } from '../components/SubmissionModal/SubmissionModal'
 
 import { DataType, Source } from '../types/data'
-import { data, getId } from '../data'
+import { data, getId } from '../data/indexGenerated'
 import Link from 'next/link'
 import { Alert, IconButton, Tooltip } from '@mui/material'
 import ShoppingCart from '@mui/icons-material/ShoppingCart'

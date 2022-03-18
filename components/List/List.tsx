@@ -12,12 +12,14 @@ interface Props {
   data: DataType[]
   searchWords: string[]
   supportLabel?: React.ReactNode
+  supportOnly?: boolean
 }
 
 export const List = ({
   data = [],
   searchWords = [],
   supportLabel = 'BET',
+  supportOnly = false,
 }: Props) => {
   const [orderedList, setOrderedList] = useState<DataType[]>([])
   const { hasSeenSubject } = useContext(StorageContext)
@@ -51,6 +53,7 @@ export const List = ({
             {...item}
             searchWords={searchWords}
             supportLabel={supportLabel}
+            supportOnly={supportOnly}
           />
           <Divider component='div' />
         </Fragment>
