@@ -567,7 +567,29 @@ export const data: DataType[] = [
         source: 'https://www.bunasta.eu/rusija/',
       },
     ],
-    support: [],
+    support: [
+      {
+        connection:
+          '"Nupirkome 2 autobusus, perdavėme Gediminas Ivanauskas, kuris su komanda šiuo metu dirba, planuoja maršrutus, kaip galima bus paimti žmones tiesiai iš Ukrainos (daugiau Ivanule drift);"\n\n\n',
+        source: 'https://www.facebook.com/Bunasta/videos/1297390707404065/',
+      },
+      {
+        connection:
+          '"Išmokėjome Ukrainoje esantiems mūsų dukterinės įmonės darbuotojams (39 žmonės) avansus – viso 100 000 Eur;"',
+        source: 'https://www.facebook.com/Bunasta/videos/1297390707404065/',
+      },
+      {
+        connection:
+          '"Dar 100 000 Eur pervedėme Ukrainoje veikiančioms organizacijoms dirbančioms su humanitarine pagalba ir kariuomenės aprūpinimu;"',
+        source: 'https://www.facebook.com/Bunasta/videos/1297390707404065/',
+      },
+      {
+        connection:
+          '"ATSIPRAŠAU, dėl savo liežuvio – praėjusiame videobloge emocijos pakišo koją, neaiškiai išreiškiau mintį." - Jurgis Adomavičius',
+        source:
+          'https://www.facebook.com/jurgis.adomavicius/posts/10159940389202855',
+      },
+    ],
   },
   {
     id: 226,
@@ -1099,6 +1121,64 @@ export const data: DataType[] = [
           '"We, together with the Carlsberg foundations, have made a EUR 10 million donation to support humanitarian efforts in Ukraine"',
         source:
           'https://www.carlsberggroup.com/newsroom/update-on-ukraine-and-russia-suspension-of-2022-guidance/',
+      },
+    ],
+  },
+  {
+    id: 291,
+    about: 'Sporto prekės',
+    logo: 'https://www.decathlon.lt/themes/decashop_v5/assets/img/logo-decathlon-blue.svg',
+    subject: 'Decathlon',
+    sources: [
+      {
+        connection:
+          '"Pressure is mounting on French brands including Auchan and Decathlon, which are continuing their sales and activities in Russia despite the invasion of Ukraine."',
+        source:
+          'https://www.connexionfrance.com/article/French-news/Pressure-mounts-on-French-brands-to-close-stores-in-Russia',
+      },
+    ],
+    support: [],
+  },
+  {
+    id: 292,
+    about: 'Maisto produktai',
+    logo: 'https://logos-world.net/wp-content/uploads/2020/09/Nestle-Logo-700x394.png',
+    subject: 'Nestle',
+    sources: [
+      {
+        connection:
+          'In Russia, we continue to focus on meeting the needs of the local people.',
+        source:
+          'https://www.nestle.com/ask-nestle/our-company/answers/update-russia-ukraine',
+      },
+      {
+        connection: '7,000 employees in Russia',
+        source:
+          'https://www.nestle.com/ask-nestle/our-company/answers/update-russia-ukraine',
+      },
+    ],
+    support: [
+      {
+        connection: 'We have suspended all capital investment in the country\n',
+        source:
+          'https://www.nestle.com/ask-nestle/our-company/answers/update-russia-ukraine',
+      },
+      {
+        connection: 'We have halted all our advertising activities in Russia\n',
+        source:
+          'https://www.nestle.com/ask-nestle/our-company/answers/update-russia-ukraine',
+      },
+      {
+        connection:
+          'We have suspended exports of our products out of Russia (except for essential foods, like baby food, to Commonwealth of Independent States countries)\n',
+        source:
+          'https://www.nestle.com/ask-nestle/our-company/answers/update-russia-ukraine',
+      },
+      {
+        connection:
+          'We have suspended imports of our products into Russia (one example being Nespresso) except for essential foods (including baby food, cereals, and tailored nutrition and therapeutic pet foods for specialist retailers and veterinarian clinics).',
+        source:
+          'https://www.nestle.com/ask-nestle/our-company/answers/update-russia-ukraine',
       },
     ],
   },

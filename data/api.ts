@@ -33,11 +33,14 @@ export function createCompany({
   source,
   sources,
   support,
-}: DataType & { invertRows?: boolean }) {
+  category,
+  country,
+}: DataType & { category: 'active' | 'refused', country: string }) {
   const data = {
     title: subject,
     description: about,
-    category: 'active',
+    category,
+    country,
     imageUrl: logo,
     rows: buildRows({ sources, connection, source, support }),
   }

@@ -149,7 +149,13 @@ const Home: NextPage = () => {
             beforeForm={
               <Alert severity='warning'>Pridėkite susijusį subjektą</Alert>
             }
-            submitMethod={createCompany}
+            submitMethod={(company: DataType) =>
+              createCompany({
+                ...company,
+                country: 'russia',
+                category: 'active',
+              })
+            }
             onClose={onModalClose}
           />
         )}
