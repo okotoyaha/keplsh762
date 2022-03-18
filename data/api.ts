@@ -33,9 +33,9 @@ export function createCompany({
   source,
   sources,
   support,
-  category,
+  category = 'active',
   country,
-}: DataType & { category: 'active' | 'refused', country: string }) {
+}: DataType & { category?: 'active' | 'refused'; country?: string }) {
   const data = {
     title: subject,
     description: about,
