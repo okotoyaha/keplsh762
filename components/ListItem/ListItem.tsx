@@ -129,7 +129,7 @@ export const ListItem = ({
                 </MUIList>
               </Grid>
             )}
-            {support && support.length && (
+            {support && support.length > 0 && (
               <>
                 {!supportOnly && (
                   <Grid item xs={12} md='auto'>
