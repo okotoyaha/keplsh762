@@ -5,33 +5,6 @@ export const getId = () => i++
 
 export const data: DataType[] = [
   {
-    id: 67,
-    about: 'Baldai (mediena)',
-    logo: 'https://vmg.eu/static/themes/site/img/site_logo.png',
-    subject: 'Vakarų medienos grupė',
-    sources: [
-      {
-        connection:
-          'Baltarusija: LLC „VMG Industry Group“, FLLC „VMG Industry", FLLC „SWOODS export", LLC „VMG WoodArt"',
-        source: 'https://vmg.eu/kontaktai/1',
-      },
-    ],
-    support: [
-      {
-        connection:
-          '"Ukrainos žmonėms – skiriame 100 000 eurų Lietuvos Raudonasis Kryžius / Lithuanian Red Cross"\n',
-        source:
-          'https://www.facebook.com/vakarumedienosgrupe/posts/807261977333903',
-      },
-      {
-        connection:
-          '"Esame pasiruošę suteikti apgyvendinimą Ukrainos karo pabėgėliams „Klaipėdos aerouosto" teritorijoje esančiame motelyje"',
-        source:
-          'https://www.facebook.com/vakarumedienosgrupe/posts/807261977333903',
-      },
-    ],
-  },
-  {
     id: 197,
     about: 'Kelionių organizatorius',
     logo: 'https://seeklogo.com/images/T/Tez_tour-logo-DCB77D74A9-seeklogo.com.png',

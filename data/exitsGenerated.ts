@@ -5,6 +5,33 @@ export const getId = () => i++
 
 export const data: DataType[] = [
   {
+    id: 67,
+    about: 'Baldai (mediena)',
+    logo: 'https://vmg.eu/static/themes/site/img/site_logo.png',
+    subject: 'Vakarų medienos grupė',
+    sources: [],
+    support: [
+      {
+        connection:
+          '"Ukrainos žmonėms – skiriame 100 000 eurų Lietuvos Raudonasis Kryžius / Lithuanian Red Cross"',
+        source:
+          'https://www.facebook.com/vakarumedienosgrupe/posts/807261977333903',
+      },
+      {
+        connection:
+          '"Esame pasiruošę suteikti apgyvendinimą Ukrainos karo pabėgėliams „Klaipėdos aerouosto" teritorijoje esančiame motelyje"',
+        source:
+          'https://www.facebook.com/vakarumedienosgrupe/posts/807261977333903',
+      },
+      {
+        connection:
+          '"SBA ir VMG grupė stabdo Baltarusijos Mogiliovo valdomų baldų fabrikų veiklą."',
+        source:
+          'https://www.vz.lt/pramone/2022/03/04/sba-grupe-stabdo-imone-baltarusijoje',
+      },
+    ],
+  },
+  {
     id: 281,
     about: 'Žemės ūkio produktų perdirbimas',
     logo: 'https://upload.wikimedia.org/wikipedia/lt/d/d4/KG_logo.jpg',
