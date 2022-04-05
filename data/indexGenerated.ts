@@ -1089,7 +1089,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – 20 proc. akcijų priklauso vadovaujančiam restoranų tinklo partneriui Gediminui Balniui, 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
+          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – <...> 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
         source: 'https://stoprus.com/assets/amberfood.png',
       },
     ],
@@ -1121,7 +1121,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – 20 proc. akcijų priklauso vadovaujančiam restoranų tinklo partneriui Gediminui Balniui, 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
+          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – <...> 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
         source: 'https://stoprus.com/assets/amberfood.png',
       },
     ],
@@ -1153,7 +1153,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – 20 proc. akcijų priklauso vadovaujančiam restoranų tinklo partneriui Gediminui Balniui, 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
+          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – <...> 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
         source: 'https://stoprus.com/assets/amberfood.png',
       },
     ],
@@ -1184,7 +1184,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – 20 proc. akcijų priklauso vadovaujančiam restoranų tinklo partneriui Gediminui Balniui, 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
+          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – <...> 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
         source: 'https://stoprus.com/assets/amberfood.png',
       },
     ],
@@ -1216,7 +1216,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – 20 proc. akcijų priklauso vadovaujančiam restoranų tinklo partneriui Gediminui Balniui, 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
+          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – <...> 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
         source: 'https://stoprus.com/assets/amberfood.png',
       },
     ],
@@ -1249,7 +1249,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – 20 proc. akcijų priklauso vadovaujančiam restoranų tinklo partneriui Gediminui Balniui, 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
+          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – <...> 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
         source: 'https://stoprus.com/assets/amberfood.png',
       },
     ],
@@ -1282,7 +1282,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – 20 proc. akcijų priklauso vadovaujančiam restoranų tinklo partneriui Gediminui Balniui, 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
+          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – <...> 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
         source: 'https://stoprus.com/assets/amberfood.png',
       },
     ],
@@ -1315,7 +1315,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – 20 proc. akcijų priklauso vadovaujančiam restoranų tinklo partneriui Gediminui Balniui, 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
+          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – <...> 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
         source: 'https://stoprus.com/assets/amberfood.png',
       },
     ],
@@ -1348,7 +1348,7 @@ export const data: DataType[] = [
       },
       {
         connection:
-          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – 20 proc. akcijų priklauso vadovaujančiam restoranų tinklo partneriui Gediminui Balniui, 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
+          '"De jure, šią restoranų grupę valdo trys skirtingos bendrovės, tačiau visose jų nuosavybės proporcijos tokios pačios – <...> 80 proc. priklauso V.Matijošaičiui ir jo šeimos nariams."',
         source: 'https://stoprus.com/assets/amberfood.png',
       },
     ],
