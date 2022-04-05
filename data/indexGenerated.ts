@@ -1077,6 +1077,20 @@ export const data: DataType[] = [
     ],
   },
   {
+    id: 314,
+    about: 'Keramika',
+    logo: 'https://kerama-marazzi.com/build/img/logo.svg',
+    subject: 'Kerama Marazzi',
+    sources: [
+      {
+        connection:
+          '"KERAMA MARAZZI is the market leader and largest manufacturer of decorative and covering stoneware in Russia."',
+        source: 'https://kerama-marazzi.com/en/about/',
+      },
+    ],
+    support: [],
+  },
+  {
     id: 317,
     about: 'Restoranų tinklas',
     logo: 'https://lt.takeoutresource.net/uploads/images/240x240/restaurants/image/ab/e6/abe6ffa9bea83040029c0a4c392f7fbf9bd767fe.png',
