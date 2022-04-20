@@ -208,4 +208,25 @@ export const data: DataType[] = [
       },
     ],
   },
+  {
+    id: 290,
+    about: 'Alus ir kiti alkoholiniai gėrimai',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Carlsberg_Group_logo.svg/1200px-Carlsberg_Group_logo.svg.png',
+    subject: 'Carlsberg',
+    sources: [],
+    support: [
+      {
+        connection:
+          '"Based on this review, we have taken the difficult and immediate decision to seek a full disposal of our business in Russia."',
+        source:
+          'https://www.carlsberggroup.com/newsroom/carlsberg-group-to-leave-russia/',
+      },
+      {
+        connection:
+          '"We, together with the Carlsberg foundations, have made a EUR 10 million donation to support humanitarian efforts in Ukraine"',
+        source:
+          'https://www.carlsberggroup.com/newsroom/update-on-ukraine-and-russia-suspension-of-2022-guidance/',
+      },
+    ],
+  },
 ]

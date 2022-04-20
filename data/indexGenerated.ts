@@ -991,34 +991,6 @@ export const data: DataType[] = [
     support: [],
   },
   {
-    id: 290,
-    about: 'Alus ir kiti alkoholiniai gėrimai',
-    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Carlsberg_Group_logo.svg/1200px-Carlsberg_Group_logo.svg.png',
-    subject: 'Carlsberg',
-    sources: [
-      {
-        connection:
-          '"We have been owners of Baltika Breweries since 2000 and majority owners since 2008. Our 8,400 employees in Baltika <...> Baltika Breweries will be run as a separate business, with the purpose of sustaining our employees and their families."',
-        source:
-          'https://www.carlsberggroup.com/newsroom/update-on-ukraine-and-russia-suspension-of-2022-guidance/',
-      },
-    ],
-    support: [
-      {
-        connection:
-          '"We announced that there would be no new investments or exports from Carlsberg Group into Russia. Since then, we have ceased all advertising by both the Carlsberg Group and Baltika Breweries in Russia, and we will stop producing and selling our flagship brand, Carlsberg, in the Russian market"',
-        source:
-          'https://www.carlsberggroup.com/newsroom/update-on-ukraine-and-russia-suspension-of-2022-guidance/',
-      },
-      {
-        connection:
-          '"We, together with the Carlsberg foundations, have made a EUR 10 million donation to support humanitarian efforts in Ukraine"',
-        source:
-          'https://www.carlsberggroup.com/newsroom/update-on-ukraine-and-russia-suspension-of-2022-guidance/',
-      },
-    ],
-  },
-  {
     id: 291,
     about: 'Sporto prekės',
     logo: 'https://www.decathlon.lt/themes/decashop_v5/assets/img/logo-decathlon-blue.svg',
