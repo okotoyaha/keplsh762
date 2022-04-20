@@ -22,22 +22,22 @@ export const data: DataType[] = [
       },
       {
         connection:
-          'tez-tour.com svetainėje - lietuviška kelionių rezervavimo sistema',
-        source: 'https://book.tez-tour.com/book/vc/site_lt/spo_lt',
+          'tez-tour.com svetainėje - lietuviška kelionių rezervavimo sistema (buvęs https://book.tez-tour.com/book/vc/site_lt/spo_lt - turinys pašalintas)',
+        source: 'https://stoprus.com/assets/tez-tour.png',
       },
     ],
     support: [
       {
         connection:
-          '"Lietuvoje veikiantis kelionių organizatorius „Tez Tour“ sako, kad jokių finansinių, valdymo ar bendradarbiavimo sąsajų su Rusijoje veikiančia tokio paties pavadinimo įmone neturi. „Verslai naudoja tą patį prekių ženklą, logotipą ir pavadinimą“, – sakė įmonės ryšių su visuomene ir rinkodaros skyriaus vadovė"',
-        source:
-          'https://www.delfi.lt/verslas/verslas/tez-tour-apie-rysius-su-rusija-tas-pats-tik-prekes-zenklas.d?id=89638149',
-      },
-      {
-        connection:
           '„<...> esame pasiruošę nemokamai į Lietuvą parskraidinti užsienyje įstrigusius šios šalies žmones savo vykdomais užsakomaisiais skrydžiais. Kartu su partneriais jau rūpinamės nespėjusių grįžti ukrainiečių nakvyne, pervežimais svečiose šalyse, teikiame ir teiksime kitą reikalingą pagalbą“, – sako Aleksandras Sukovas, <UAB> „Tez Tour“ direktorius.',
         source:
           'https://www.delfi.lt/multimedija/verslas-kartu-su-ukraina/tez-tour-padeda-parskraidinti-uzsienyje-esancius-ukrainos-zmones.d?id=89611355',
+      },
+      {
+        connection:
+          '"Lietuvoje veikiantis kelionių organizatorius „Tez Tour“ sako, kad jokių finansinių, valdymo ar bendradarbiavimo sąsajų su Rusijoje veikiančia tokio paties pavadinimo įmone neturi. „Verslai naudoja tą patį prekių ženklą, logotipą ir pavadinimą“, – sakė įmonės ryšių su visuomene ir rinkodaros skyriaus vadovė"',
+        source:
+          'https://www.delfi.lt/verslas/verslas/tez-tour-apie-rysius-su-rusija-tas-pats-tik-prekes-zenklas.d?id=89638149',
       },
     ],
   },
@@ -1030,6 +1030,11 @@ export const data: DataType[] = [
         source:
           'https://www.connexionfrance.com/article/French-news/Pressure-mounts-on-French-brands-to-close-stores-in-Russia',
       },
+      {
+        connection:
+          '"Ar išvykstate iš Rusijos? Ne. Sustabdome savo parduotuvių ir internetinės parduotuvės Decathlon.ru veiklą." - deepl.com vertimas',
+        source: 'https://www.decathlon.ru/new-contact.html',
+      },
     ],
     support: [],
   },
@@ -1252,7 +1257,7 @@ export const data: DataType[] = [
   {
     id: 322,
     about: 'Restoranų tinklas',
-    logo: 'http://www.guacamole.lt/assetic/images/guacamole/header-logo.png',
+    logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALUAAAAqCAYAAAD1Yxo/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzhBMEZBRTRBNzU1MTFFNzg2RDU4N0RFODY2M0RGNTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzhBMEZBRTVBNzU1MTFFNzg2RDU4N0RFODY2M0RGNTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozOEEwRkFFMkE3NTUxMUU3ODZENTg3REU4NjYzREY1NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozOEEwRkFFM0E3NTUxMUU3ODZENTg3REU4NjYzREY1NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pnighh8AAA2YSURBVHja7F0LdFbF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',
     subject: 'Guacamole Mexican Grill',
     sources: [
       {
