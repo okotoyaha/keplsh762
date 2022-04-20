@@ -1386,4 +1386,81 @@ export const data: DataType[] = [
       },
     ],
   },
+  {
+    id: 338,
+    about: 'Majonezas ir padažai',
+    logo: 'https://www.unileverfoodsolutionsbaltics.com/dam/ufs-lt/lt/brands/hellmann-s/hellmann-s-brand-logo.png/jcr:content/renditions/cq5dam.thumbnail.140.100.png',
+    subject: "Hellmann's",
+    sources: [
+      {
+        connection: 'Unilever prekių ženklai',
+        source:
+          'https://www.unileverfoodsolutionsbaltics.com/lt/produktu-katalogas.html',
+      },
+      {
+        connection:
+          '"We will continue to supply our everyday essential food and hygiene products made in Russia to people in the country"',
+        source:
+          'https://www.unilever.com/news/news-search/2022/updated-unilever-statement-on-the-war-in-ukraine/',
+      },
+    ],
+    support: [],
+  },
+  {
+    id: 339,
+    about: 'Prieskoniai',
+    logo: 'https://www.unileverfoodsolutionsbaltics.com/dam/ufs-lt/lt/brands/knorr/knorr-brand-logo.png/jcr:content/renditions/cq5dam.thumbnail.140.100.png',
+    subject: 'Knorr',
+    sources: [
+      {
+        connection: 'Unilever prekės ženklas',
+        source:
+          'https://www.unileverfoodsolutionsbaltics.com/lt/produktu-katalogas.html',
+      },
+      {
+        connection:
+          '"We will continue to supply our everyday essential food and hygiene products made in Russia to people in the country"',
+        source:
+          'https://www.unilever.com/news/news-search/2022/updated-unilever-statement-on-the-war-in-ukraine/',
+      },
+    ],
+    support: [],
+  },
+  {
+    id: 340,
+    about: 'Kelionių agentūra',
+    logo: 'https://coraltravel.lt/assets/components/main_menu/img/CoralTravel-30Years.png',
+    subject: 'Coral Travel',
+    sources: [
+      {
+        connection:
+          '"„Coral Travel“ priklauso turkiško kapitalo „OTI Holding“ turizmo koncernui"',
+        source: 'https://coraltravel.lt/lt/about',
+      },
+      {
+        connection: '"CORAL TRAVEL RUSSIA <...> MOSCOW"',
+        source: 'https://www.otiholding.com/EN/offices/Russia/',
+      },
+      {
+        connection:
+          '"Turkish Airlines will allocate the seats to Turkish tour operators operating in Russia (primarily Anex Tour, Pegas Touristik and Coral Travel)."',
+        source: 'https://simpleflying.com/turkish-airlines-russian-tourists/',
+      },
+    ],
+    support: [],
+  },
+  {
+    id: 341,
+    about: 'Oro linijos',
+    logo: 'https://cdn.turkishairlines.com/m/2190da9e53a70e4e/original/THY-LOGO.png',
+    subject: 'Turkish Airlines',
+    sources: [
+      {
+        connection:
+          '"The Turkish flag carrier has reached an agreement to fly 1.5 million Russian tourists into the country over the year."',
+        source: 'https://simpleflying.com/turkish-airlines-russian-tourists/',
+      },
+    ],
+    support: [],
+  },
 ]
