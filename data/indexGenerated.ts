@@ -1435,4 +1435,19 @@ export const data: DataType[] = [
     ],
     support: [],
   },
+  {
+    id: 344,
+    about: 'Padangos',
+    logo: 'https://naftenas.lt/wp-content/uploads/2020/04/continental-logo-01.jpg',
+    subject: 'Continental',
+    sources: [
+      {
+        connection:
+          '"German car parts supplier Continental AG has temporarily resumed tyre production for passenger cars at its Russian plant in Kaluga, it said on Tuesday, to protect local workers who could otherwise face criminal charges."',
+        source:
+          'https://www.reuters.com/business/autos-transportation/continental-restarts-tyre-making-russian-plant-protect-workers-2022-04-19/',
+      },
+    ],
+    support: [],
+  },
 ]
