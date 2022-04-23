@@ -1054,6 +1054,21 @@ export const data: DataType[] = [
     ],
   },
   {
+    id: 313,
+    about: 'Šokoladas',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Ritter_Sport_logo.svg',
+    subject: 'Ritter sport',
+    sources: [
+      {
+        connection:
+          '"BERLIN, March 29. /TASS/. German chocolate producer Ritter Sport will continue its business in Russia, DPA news agency said on Tuesday, citing a company’s spokesperson."',
+        source:
+          'https://tass.com/economy/1429303?utm_source=google.com&amp;utm_medium=organic&amp;utm_campaign=google.com&amp;utm_referrer=google.com',
+      },
+    ],
+    support: [],
+  },
+  {
     id: 314,
     about: 'Keramika',
     logo: 'https://kerama-marazzi.com/build/img/logo.svg',
@@ -1357,6 +1372,21 @@ export const data: DataType[] = [
           'https://www.charliepizza.lt/uploads/slider/c1fec118b9f684f1e461e62e0693a4e4.png',
       },
     ],
+  },
+  {
+    id: 327,
+    about: 'Batai',
+    logo: 'https://e7.pngegg.com/pngimages/98/603/png-clipart-ecco-logo-icons-logos-emojis-shop-logos.png',
+    subject: 'Ecco',
+    sources: [
+      {
+        connection:
+          'In Russia, where ECCO in 2020 acquired the distributor, there are over 1,800 people employed. They and their families are also going through a difficult time. ECCO is following developments closely and is in constant contact with our local management. Until further, ECCO will not expand the business in the Russian market, and investments have been put on hold.',
+        source:
+          'https://group.ecco.com/en/news/newsroom/news/2022/statement-on-the-situation-in-ukraine',
+      },
+    ],
+    support: [],
   },
   {
     id: 338,
