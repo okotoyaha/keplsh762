@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useCallback } from 'react'
 import { useLocalStorageState } from 'ahooks'
 import uniq from 'lodash-es/uniq'
 
@@ -35,11 +35,14 @@ export const Storage: FC = ({ children }) => {
     })
   }
 
-  const hasSeenSubject = (subject: string) => {
-    const subjectKey = getStorageKey(subject)
+  const hasSeenSubject = useCallback(
+    (subject: string) => {
+      const subjectKey = getStorageKey(subject)
 
-    return seen.includes(subjectKey)
-  }
+      return seen.includes(subjectKey)
+    },
+    [seen]
+  )
 
   const value = { hasSeenSubject, setSubjectSeen }
 

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { debounce } from 'lodash-es'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -45,9 +46,17 @@ export const Navbar = ({
 }: Props) => {
   const [aboutShown, setAboutShown] = useLocalStorage('aboutShown', '')
 
-  const onSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onSearch(event.target.value)
-  }
+  const debouncedSearch = React.useMemo(
+    () => debounce(onSearch, 300),
+    [onSearch]
+  )
+
+  const onSearchChange = React.useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      debouncedSearch(event.target.value)
+    },
+    [debouncedSearch]
+  )
 
   return (
     <Box sx={{ flexGrow: 1 }}>

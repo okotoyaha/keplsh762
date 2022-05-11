@@ -43,7 +43,7 @@ export const List = ({
     })
 
     setOrderedList(newOrderedList)
-  }, [])
+  }, [data])
 
   return (
     <MUIList component='div'>
