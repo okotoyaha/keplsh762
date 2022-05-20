@@ -819,7 +819,14 @@ export const data: DataType[] = [
           'https://www.lrt.lt/naujienos/verslas/4/1643606/nieko-nepristabde-prekes-isvezioja-visos-linijos-dirba-darbuotojai-teigia-kad-viciunu-grupe-kol-kas-nenutraukia-gamybos-rusijoje',
       },
     ],
-    support: [],
+    support: [
+      {
+        connection:
+          '„Vičiūnų grupei“ parduoti verslą Rusijoje padės tarptautinė paslaugų grupė EY <...> Tikimasi, kad pardavimo procesą iki pat sutarties pasirašymo bei sandorio užbaigimo pavyks įgyvendinti maždaug po 3 mėnesių.',
+        source:
+          'https://www.vz.lt/pramone/2022/04/29/viciunu-grupe-pasamde-konsultantus-tikisi-po-3-menesiu-parduoti-versla/',
+      },
+    ],
   },
   {
     id: 249,
