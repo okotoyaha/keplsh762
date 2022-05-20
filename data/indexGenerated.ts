@@ -252,7 +252,14 @@ export const data: DataType[] = [
           'https://www.vz.lt/rinkos/2021/01/19/delistinguoti-suruostoje-snaigeje-investuotojai-pasigenda-10-mln-eur',
       },
     ],
-    support: [],
+    support: [
+      {
+        connection:
+          '"Neliekant nuošalyje, į Ukrainos karo pabėgėlių centrą atvežėme įvairios SNAIGĖS  buitinės technikos."',
+        source:
+          'https://www.snaige.lt/snaige-karo-pabegeliams-is-ukrainos-skyre-parama-buitine-technika/',
+      },
+    ],
   },
   {
     id: 206,
