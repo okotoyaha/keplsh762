@@ -749,70 +749,6 @@ export const data: DataType[] = [
     support: [],
   },
   {
-    id: 235,
-    about: 'Kompanijų grupė',
-    logo: 'https://www.cityservice.eu/themes/cityservice/images/main-logo.svg',
-    subject: 'CityService',
-    sources: [
-      {
-        connection: '"OAO Cити Сервис <...> St. Petersburg"',
-        source:
-          'https://www.cityservice.eu/assets/Uploads/Files/City-Service-SE-2021-Q4-Interim-consolidated-financial-statements.pdf',
-      },
-    ],
-    support: [
-      {
-        connection:
-          '"Įmonės akcininkai dar vasario mėn. priėmė sprendimą stabdyti verslą Rusijos rinkoje ir solidarizuotis su Ukrainos bendruomene bei visu vakarų pasauliu"',
-        source: 'https://stoprus.com/assets/cityservice.png',
-      },
-      {
-        connection:
-          '"Skyrėme finansinę paramą SOS Vaikų kaimui, kuris priglaudė ir rūpinasi mažiausiais karo pabėgėliais – Ukrainos vaikais."',
-        source: 'https://tvarumas.cityservice.lt/parama-ukrainos-zmonems/',
-      },
-      {
-        connection:
-          '"Kartu su Nacionaliniu savanorių pagalbos koordinavimo centru „Stiprūs kartu“ pradedame bendradarbiavimą ir padėsime ieškant būstų karo pabėgėliams."',
-        source: 'https://tvarumas.cityservice.lt/parama-ukrainos-zmonems/',
-      },
-    ],
-  },
-  {
-    id: 236,
-    about: 'Namų administratorius',
-    logo: 'https://www.cityservice.eu/assets/Uploads/Companies/region-company-logo-Mano-bustas-02.svg',
-    subject: 'Mano Būstas',
-    sources: [
-      {
-        connection: 'Grupės CityService dalis',
-        source: 'https://www.cityservice.eu/regions/lithuania',
-      },
-      {
-        connection: '"OAO Cити Сервис <...> St. Petersburg"',
-        source:
-          'https://www.cityservice.eu/assets/Uploads/Files/City-Service-SE-2021-Q4-Interim-consolidated-financial-statements.pdf',
-      },
-    ],
-    support: [
-      {
-        connection:
-          '"Įmonės akcininkai dar vasario mėn. priėmė sprendimą stabdyti verslą Rusijos rinkoje ir solidarizuotis su Ukrainos bendruomene bei visu vakarų pasauliu"',
-        source: 'https://stoprus.com/assets/cityservice.png',
-      },
-      {
-        connection:
-          '"Skyrėme finansinę paramą SOS Vaikų kaimui, kuris priglaudė ir rūpinasi mažiausiais karo pabėgėliais – Ukrainos vaikais."',
-        source: 'https://tvarumas.cityservice.lt/parama-ukrainos-zmonems/',
-      },
-      {
-        connection:
-          '"Kartu su Nacionaliniu savanorių pagalbos koordinavimo centru „Stiprūs kartu“ pradedame bendradarbiavimą ir padėsime ieškant būstų karo pabėgėliams."',
-        source: 'https://tvarumas.cityservice.lt/parama-ukrainos-zmonems/',
-      },
-    ],
-  },
-  {
     id: 237,
     about: 'Informacinės technologijos, saugumo sprendimai ir licencijos',
     logo: 'https://softline.ru/images/svg/softline_we_know_logo.svg',
@@ -854,6 +790,12 @@ export const data: DataType[] = [
         connection:
           '"Ukrainos Raudonajam kryžiui skyrė 100 tūkst. eurų. Bendrovė jau nutraukė savo reklamos transliavimą Rusijos kanaluose Lietuvoje, Latvijoje ir Estijoje, taip pat sustabdė rusiškos kilmės prekių pirkimus."',
         source: 'https://www.facebook.com/eSenukai/posts/5699805613369560',
+      },
+      {
+        connection:
+          '"Šiuo metu vyksta Suomijos ir Lietuvos įmonės „Kesko Senukai“ netiesiogiai valdomo 50 proc. OMA akcijų paketo pardavimo procesas, kurį užbaigti planuojama per artimiausius mėnesius, teigiama pranešime žiniasklaidai."',
+        source:
+          'https://www.delfi.lt/verslas/verslas/kesko-senukai-traukiasi-is-verslo-baltarusijoje.d?id=90230149',
       },
     ],
   },

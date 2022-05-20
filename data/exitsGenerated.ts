@@ -51,6 +51,70 @@ export const data: DataType[] = [
     ],
   },
   {
+    id: 235,
+    about: 'Kompanijų grupė',
+    logo: 'https://www.cityservice.eu/themes/cityservice/images/main-logo.svg',
+    subject: 'CityService',
+    sources: [],
+    support: [
+      {
+        connection:
+          '"On 18 May 2022, the Group sold 100% stake in UAB Baltijos turto valdymas, which was a 100% shareholder of companies based in St. Petersburg, Russian Federation. The transaction was concluded in pursuance of the Company\'s decision to terminate business activities in the Russian Federation. Following today\'s sale, City Service SE no longer has any business in the Russian Federation."',
+        source:
+          'https://www.gpw.pl/komunikat?geru_id=396790&title=Sale+of+Business+in+Russian+Federation',
+      },
+      {
+        connection:
+          '"Skyrėme finansinę paramą SOS Vaikų kaimui, kuris priglaudė ir rūpinasi mažiausiais karo pabėgėliais – Ukrainos vaikais."',
+        source: 'https://tvarumas.cityservice.lt/parama-ukrainos-zmonems/',
+      },
+      {
+        connection:
+          '"Kartu su Nacionaliniu savanorių pagalbos koordinavimo centru „Stiprūs kartu“ pradedame bendradarbiavimą ir padėsime ieškant būstų karo pabėgėliams."',
+        source: 'https://tvarumas.cityservice.lt/parama-ukrainos-zmonems/',
+      },
+      {
+        connection:
+          '"Įmonės akcininkai dar vasario mėn. priėmė sprendimą stabdyti verslą Rusijos rinkoje ir solidarizuotis su Ukrainos bendruomene bei visu vakarų pasauliu"',
+        source: 'https://stoprus.com/assets/cityservice.png',
+      },
+    ],
+  },
+  {
+    id: 236,
+    about: 'Namų administratorius',
+    logo: 'https://www.cityservice.eu/assets/Uploads/Companies/region-company-logo-Mano-bustas-02.svg',
+    subject: 'Mano Būstas',
+    sources: [],
+    support: [
+      {
+        connection: 'Grupės CityService dalis',
+        source: 'https://www.cityservice.eu/regions/lithuania',
+      },
+      {
+        connection:
+          "On 18 May 2022, the Group sold 100% stake in UAB Baltijos turto valdymas, which was a 100% shareholder of companies based in St. Petersburg, Russian Federation. The transaction was concluded in pursuance of the Company's decision to terminate business activities in the Russian Federation. Following today's sale, City Service SE no longer has any business in the Russian Federation.",
+        source:
+          'https://www.gpw.pl/komunikat?geru_id=396790&title=Sale+of+Business+in+Russian+Federation',
+      },
+      {
+        connection:
+          '"Įmonės akcininkai dar vasario mėn. priėmė sprendimą stabdyti verslą Rusijos rinkoje ir solidarizuotis su Ukrainos bendruomene bei visu vakarų pasauliu"',
+        source: 'https://stoprus.com/assets/cityservice.png',
+      },
+      {
+        connection:
+          '"Skyrėme finansinę paramą SOS Vaikų kaimui, kuris priglaudė ir rūpinasi mažiausiais karo pabėgėliais – Ukrainos vaikais."',
+        source: 'https://tvarumas.cityservice.lt/parama-ukrainos-zmonems/',
+      },
+      {
+        connection:
+          '"Kartu su Nacionaliniu savanorių pagalbos koordinavimo centru „Stiprūs kartu“ pradedame bendradarbiavimą ir padėsime ieškant būstų karo pabėgėliams."',
+        source: 'https://tvarumas.cityservice.lt/parama-ukrainos-zmonems/',
+      },
+    ],
+  },
+  {
     id: 281,
     about: 'Žemės ūkio produktų perdirbimas',
     logo: 'https://upload.wikimedia.org/wikipedia/lt/d/d4/KG_logo.jpg',
